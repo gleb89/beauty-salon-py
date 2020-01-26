@@ -1,0 +1,60 @@
+<nav id="main-nav" class="navbar fixed-top navbar-expand-lg navbar-light  ">
+  <a class="navbar-brand" href="/">
+    <h3>"Beauty Room"</h3>
+  </a>
+  <button
+    class="navbar-toggler "
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+  >
+    <span class=" navbar-toggler-icon "></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ml-5">
+      <li class="nav-item ">
+        <a class="nav-link " href="#section-about">
+          <h5>О нас</h5>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section-services">
+          <h5>Услуги</h5>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section-gallery">
+          <h5>Фотогалерея</h5>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#section-prices">
+          <h5>Прайс</h5>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section-contacts">
+          <h5>Контакты</h5>
+        </a>
+      </li>
+    </ul>
+    <div>
+      <button
+        type="button"
+        class="btn  mr-3"
+        data-toggle="modal"
+        data-target="#exampleModal"
+      >
+        Записаться
+      </button>
+    </div>
+    <div id="contacts" class="my-2">
+      <a href="tel:{{ site_phone }}" title="Позвонить"
+        >{{ site_phone_formated }}<i class="fas fa-phone"> </i
+      ></a>
+    </div>
+  </div>
+</nav>
