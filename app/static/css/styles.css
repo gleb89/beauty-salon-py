@@ -264,7 +264,7 @@ section {
   font-family: "Carter One", cursive;
 }
 .fa-phone:before {
-  font-size: 20px;
+ color: green;
 }
 #main-nav #contacts a {
   color: gray;
