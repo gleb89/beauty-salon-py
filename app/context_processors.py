@@ -16,9 +16,9 @@ def template_functions():
 @app.context_processor
 def site_settings():
     return dict(
-        site_phone='+79991845015',
-        site_phone_formated='+7 999 184-50-15',
-        site_email='glebhleb89@icloud.com',
+        site_phone='+79370969944',
+        site_phone_formated='+7 937 096-99-44',
+        site_email='beautyroom37@mail.ru',
         site_address='г. Камышин, ул. Терешковой 10',
         site_social=[
             {'name': 'ВКонтакте', 'url': 'https://vk.com'},
