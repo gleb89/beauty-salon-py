@@ -45,8 +45,8 @@
 </section>
 
 <section id="section-services" class="section-common">
-  <div class="section-common__title container">
-    <h2>Услуги</h2>
+  <div class="section-common__tit container ">
+    <h2 class="ivi">Услуги</h2>
   </div>
   <div class="section-common__content container ">
 
@@ -55,10 +55,10 @@
       {% if service.show %}
       <div class="col-md-4 ">
 
-        <div class="card mb-4 shadow-sm text-center wow zoomIn" data-wow-delay="0.1s">
+        <div class="card  mb-4 shadow-sm text-center wow zoomIn" data-wow-delay="0.1s">
 
           {% if service.image %}
-          <img class="img-thumbnail gap " src="{{ url_for('static', filename=service.image) }}" alt="">
+          <img class="img-thumbnail gap  " src="{{ url_for('static', filename=service.image) }}" alt="">
           {% else %}
           <img src="https://via.placeholder.com/256x170" class="card-img-top" alt="">
           {% endif %}
@@ -101,8 +101,10 @@
         <h4>смотреть больше фото</h4>
         <a class="" href="https://www.instagram.com/beauty_room_kamyshin/" target="_blank"> <i
             class="fab fa-instagram"></i>
+        </a>
       </div>
-      </a>
+     
+      
 
     </div>
 
@@ -134,13 +136,13 @@
     <div class="row featurette">
       <div class="col-md-6 order-md-2">
         <h2 class="featurette-heading text-center">Прайс</h2>
-        <div class="container_prices ">
+        <div class="container_prices wow zoomIn ">
           <ul>
             <li>
               <input type="checkbox" checked>
               <i></i>
               <h2>Маникюр</h2>
-              <p class="text-center">
+              <p class="text-center wow ">
                 Ремонт ногтя <br>
                 50р<br>
                 Дизайн(геометрия,вензеля,рисунок) <br>
@@ -250,8 +252,8 @@
     </divc>
 </section>
 
-<div type="button" class="callback-bt" data-toggle="modal" data-target="#exampleModal">
-  <div class="text-call">
+<div type="button round" class="callback-bt " data-toggle="modal" data-target="#exampleModal">
+  <div class="text-call ">
     <i class="fa fa-phone"></i>
     <span>Обратный<br>звонок</span>
   </div>
