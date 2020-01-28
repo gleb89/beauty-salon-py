@@ -261,11 +261,11 @@ section {
 .gap {
   box-shadow: 10px 5px 5px gray;
 }
-/*.container {
+.container {
   font-family: "Carter One", cursive;
-}*/
+}
 .fa-phone:before {
-  color: green;
+  color: black;
 }
 #main-nav #contacts a {
   color: gray;
