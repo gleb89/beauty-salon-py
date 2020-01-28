@@ -253,6 +253,7 @@ section {
   font-family: "Carter One", cursive;
 }
 .card-body {
+  font-size: 18px;
   font-family: "Carter One", cursive;
   border: black 1px solid;
   box-shadow: 10px 5px 5px gray;
