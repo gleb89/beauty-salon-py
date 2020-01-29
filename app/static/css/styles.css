@@ -9,6 +9,25 @@ body {
   position: relative;
   background-color: white;
 }
+section {
+  margin-top: 30px;
+}
+.container {
+  font-family: "Carter One", cursive;
+}
+.section-common {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+.section-common__title {
+  text-align: center;
+}
+.section-common__title h2 {
+  font-size: 2.7em;
+  margin-bottom: 30px;
+  font-family: "Carter One", cursive;
+  color: white;
+}
 h1 {
   -webkit-text-stroke-width: 0.6px;
   -webkit-text-stroke-color: black;
@@ -17,33 +36,7 @@ h2 {
   font-family: "Carter One", cursive;
 }
 
-#header {
-  background-color: white;
-}
-#header__content {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url(./images/zz.jpg);
-
-  color: white;
-  height: 95vh;
-
-  display: flex;
-  align-items: center;
-}
-
-#header__content h1 {
-  font-family: "Carter One", cursive;
-  font-size: 70px;
-  color: #fff !important;
-  text-shadow: 2px 2px 2px #000;
-}
-#header__content h3 {
-  color: #fff !important;
-  text-shadow: 1px 1px 1px #000;
-  font-family: "Carter One", cursive;
-}
+/*navbar*/
 
 #main-nav {
   background: white;
@@ -53,87 +46,16 @@ h2 {
   color: #eee;
   font-family: "Carter One", cursive;
 }
-
-@media (max-width: 992px) {
-  .nav-link {
-    padding: 0.5rem 1rem !important;
-  }
-}
-
 #main-nav .navbar-nav .active > .nav-link,
 #main-nav .navbar-nav .nav-link.active,
 #main-nav .navbar-nav .nav-link.show,
 #main-nav .navbar-nav .show > .nav-link {
   color: white;
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
-  #section-about {
-    background: url(./images/fff.jpg);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #eee;
-    margin: 1%;
-  }
-}
-
-@media (min-width: 992px) {
-  #main-nav .nav-pills .nav-link.active,
-  #main-nav .nav-pills .show > .nav-link {
-    background-color: white;
-    border-radius: 0;
-  }
-}
-@media (max-width: 992px) {
-  #main-nav .nav-pills .nav-link.active,
-  #main-nav .nav-pills .show > .nav-link {
-    background-color: #333;
-  }
-}
-@media (max-width: 1250px) {
-  #header__content {
-    background-size: cover;
-  }
-}
-@media (max-width: 560px) {
-  #header_content {
-    width: 100vw;
-  }
-}
-
-#footer {
-  background-color: #eee;
-}
-
-.section-common {
-  padding-top: 80px;
-  padding-bottom: 60px;
-}
-
-.section-common__title {
-  text-align: center;
-}
-.section-common__tit {
-  color: #000;
-  text-align: center;
-  margin-bottom: 50px;
-}
-.section-common__title h2 {
-  font-size: 2.7em;
-  margin-bottom: 30px;
+#main-nav #contacts a {
+  color: gray;
   font-family: "Carter One", cursive;
-  color: white;
 }
-
-#section-gallery .gallery-img img {
-  transition: all ease-in-out 0.3s;
-}
-
-#section-gallery .gallery-img img:hover {
-  opacity: 0.6;
-}
-
 .navbar-brand h3 {
   font-family: "Carter One", cursive;
   color: black;
@@ -141,21 +63,9 @@ h2 {
 .nav-link h5:hover {
   transform: scale(1.2);
 }
-.my-2 {
-  font-family: "Carter One", cursive;
-  background-color: white;
-  color: rgb(36, 114, 26);
-}
-
 .nav-link h5 {
   color: black;
   font-family: "Pacifico", cursive;
-}
-footer {
-  background: darkslategray;
-}
-.img-thumbnail {
-  background-color: #eee;
 }
 .btn {
   background-color: gold;
@@ -166,12 +76,8 @@ footer {
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
-.onas {
-  margin-top: 70px;
-  opacity: 0.5;
-}
-.yslugi {
-  opacity: 0.6;
+.fa-phone:before {
+  color: black;
 }
 #main {
   margin-top: 50px;
@@ -179,254 +85,13 @@ footer {
 #main-nav {
   box-shadow: 10px 5px 5px gray;
 }
-.container_prices {
-  display: grid;
-  grid-template-columns: 1fr;
-  font-family: "Carter One", cursive;
-}
-.prices {
-  margin: 10px;
-}
-#section-contacts {
-  font-family: "Carter One", cursive;
-  color: black;
-}
-#section-services {
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  background-attachment: fixed;
-  color: #eee;
-  margin: 1%;
-}
-#section-prices {
-  background: url(./images/mm.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  background-attachment: fixed;
-  color: black;
-  margin: 1%;
-}
-
-#section-gallery {
-  background: url(./images/mmmmm.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  background-attachment: fixed;
-  color: #eee;
-  margin: 1%;
-}
-
-#section-about {
-  background: url(./images/fff.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  background-attachment: fixed;
-  color: #eee;
-  margin: 1%;
-}
-section {
-  margin-top: 30px;
-}
-.fa-instagram:before {
-  content: "\f16d";
-  font-size: 80px;
-  color: white;
-}
-.soc .fa-instagram:before {
-  color: #8a3ab9;
-  font-size: 50px;
-}
-.fa-whatsapp:before {
-  content: "\f232";
-  font-size: 50px;
-  color: green;
-}
-.fa-whatsapp:hover {
-  opacity: 0.6;
-  transform: scale(1.2);
-}
-.fa-instagram:hover {
-  opacity: 0.6;
-  transform: scale(1.2);
-}
-
-.yslugi {
-  margin-top: 100px;
-  border-radius: 2%;
-}
-.lead {
-  color: white;
-  font-family: "Carter One", cursive;
-}
-.card-body {
-  font-size: 18px;
-  font-family: "Carter One", cursive;
-  border: black 1px solid;
-  box-shadow: 10px 5px 5px gray;
-}
-.gap {
-  box-shadow: 10px 5px 5px gray;
-}
-.container {
-  font-family: "Carter One", cursive;
-}
-.fa-phone:before {
-  color: black;
-}
 #main-nav #contacts a {
   color: gray;
   font-family: "Carter One", cursive;
 }
-.inst {
-  color: #000;
-}
-.card {
-  background-color: white;
-  width: 18rem;
-}
-.card-body {
-  color: black;
-  font-family: "Carter One", cursive;
-  border: white 1px solid;
-}
-.card-body {
-  height: 150px;
-}
-.inst {
-  color: white;
-  font-family: "Carter One", cursive;
-}
-.soc {
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
-}
-.map {
-  max-width: 600px;
-}
-.gotopbtn {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  background: white;
-  bottom: 40px;
-  right: 22px;
-  text-decoration: none;
-  text-align: center;
-  line-height: 50px;
-  color: #333;
-  font-size: 22px;
-  opacity: 0.75;
-}
-#section-prices {
-  color: #000;
-}
-#accordion {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-}
-.dropdown-pt {
-  display: grid;
-  grid-template-rows: 1fr;
-}
+/*end navbar*/
 
-#section-prices ul {
-  list-style: none;
-  perspective: 900;
-  padding: 0;
-  margin: 0;
-}
-#section-prices ul li {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  padding-bottom: 4px;
-  padding-top: 18px;
-  border-top: 1px dotted #dce7eb;
-}
-#section-prices ul li:nth-of-type(1) {
-  animation-delay: 0.5s;
-}
-#section-prices ul li:nth-of-type(2) {
-  animation-delay: 0.75s;
-}
-#section-prices ul li:nth-of-type(3) {
-  animation-delay: 1s;
-}
-#section-prices ul li:last-of-type {
-  padding-bottom: 0;
-}
-#section-prices ul li i {
-  position: absolute;
-  transform: translate(-6px, 0);
-  margin-top: 16px;
-  right: 0;
-}
-#section-prices ul li i:before,
-ul li i:after {
-  content: "";
-  position: absolute;
-  background-color: #ff6873;
-  width: 3px;
-  height: 9px;
-}
-#section-prices ul li i:before {
-  transform: translate(-2px, 0) rotate(45deg);
-}
-#section-prices ul li i:after {
-  transform: translate(2px, 0) rotate(-45deg);
-}
-#section-prices ul li input[type="checkbox"] {
-  position: absolute;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-}
-#section-prices ul li input[type="checkbox"]:checked ~ p {
-  margin-top: 0;
-  max-height: 0;
-  opacity: 0;
-  transform: translate(0, 50%);
-}
-#section-prices ul li input[type="checkbox"]:checked ~ i:before {
-  transform: translate(2px, 0) rotate(45deg);
-}
-#section-prices ul li input[type="checkbox"]:checked ~ i:after {
-  transform: translate(-2px, 0) rotate(-45deg);
-}
-
-@keyframes flipdown {
-  0% {
-    opacity: 0;
-    transform-origin: top center;
-    transform: rotateX(-90deg);
-  }
-  5% {
-    opacity: 1;
-  }
-  80% {
-    transform: rotateX(8deg);
-  }
-  83% {
-    transform: rotateX(6deg);
-  }
-  92% {
-    transform: rotateX(-3deg);
-  }
-  100% {
-    transform-origin: top center;
-    transform: rotateX(0deg);
-  }
-}
-/*кнопка звонка*/
-
+/*btn call*/
 .callback-bt {
   background: #38a3fd;
   border: 2px solid #38a3fd;
@@ -658,4 +323,344 @@ ul li i:after {
     -webkit-transform: rotateZ(0deg);
   }
 }
-/* конец кнопки звонка */
+/* end btn call */
+
+/*header*/
+#header {
+  background-color: white;
+}
+#header__content {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./images/zz.jpg);
+
+  color: white;
+  height: 95vh;
+
+  display: flex;
+  align-items: center;
+}
+
+#header__content h1 {
+  font-family: "Carter One", cursive;
+  font-size: 70px;
+  color: #fff !important;
+  text-shadow: 2px 2px 2px #000;
+}
+#header__content h3 {
+  color: #fff !important;
+  text-shadow: 1px 1px 1px #000;
+  font-family: "Carter One", cursive;
+}
+/*end header*/
+
+*/footer*/ #footer {
+  background-color: #eee;
+}
+footer {
+  background: darkslategray;
+}
+/*end footer*/
+
+/* section about*/
+#section-about {
+  background: url(./images/fff.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #eee;
+  margin: 1%;
+}
+.onas {
+  margin-top: 70px;
+  opacity: 0.5;
+}
+/*end section about*/
+
+/*section prices*/
+#section-prices {
+  background: url(./images/mm.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  color: black;
+  margin: 1%;
+}
+.container_prices {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: "Carter One", cursive;
+}
+.prices {
+  margin: 10px;
+}
+#accordion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+.dropdown-pt {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+#section-prices ul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+#section-prices ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-top: 1px dotted #dce7eb;
+}
+#section-prices ul li:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+#section-prices ul li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+#section-prices ul li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+#section-prices ul li:last-of-type {
+  padding-bottom: 0;
+}
+#section-prices ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 0;
+}
+#section-prices ul li i:before,
+ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #ff6873;
+  width: 3px;
+  height: 9px;
+}
+#section-prices ul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+#section-prices ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+#section-prices ul li input[type="checkbox"] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+#section-prices ul li input[type="checkbox"]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+#section-prices ul li input[type="checkbox"]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+#section-prices ul li input[type="checkbox"]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
+}
+/*end section prices*/
+
+/*section gallery*/
+#section-gallery {
+  background: url(./images/mmmmm.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #eee;
+  margin: 1%;
+}
+.img-thumbnail {
+  background-color: #eee;
+}
+#section-gallery .gallery-img img {
+  transition: all ease-in-out 0.3s;
+}
+
+#section-gallery .gallery-img img:hover {
+  opacity: 0.6;
+}
+.inst {
+  color: white;
+  font-family: "Carter One", cursive;
+}
+.gap {
+  box-shadow: 10px 5px 5px gray;
+}
+/*end section gallery*/
+
+/*section services*/
+#section-services {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #eee;
+  margin: 1%;
+}
+.section-common__tit {
+  color: #000;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.yslugi {
+  opacity: 0.6;
+  margin-top: 100px;
+  border-radius: 2%;
+}
+.card-body {
+  font-size: 18px;
+  font-family: "Carter One", cursive;
+  border: black 1px solid;
+  box-shadow: 10px 5px 5px gray;
+  color: black;
+  height: 150px;
+}
+.card {
+  background-color: white;
+  width: 18rem;
+}
+/*end section services*/
+
+/*section contacts*/
+#section-contacts {
+  font-family: "Carter One", cursive;
+  color: black;
+}
+.my-2 {
+  font-family: "Carter One", cursive;
+  background-color: white;
+  color: rgb(36, 114, 26);
+}
+.fa-instagram:before {
+  content: "\f16d";
+  font-size: 80px;
+  color: white;
+}
+.soc .fa-instagram:before {
+  color: #8a3ab9;
+  font-size: 50px;
+}
+.fa-whatsapp:before {
+  content: "\f232";
+  font-size: 50px;
+  color: green;
+}
+.fa-whatsapp:hover {
+  opacity: 0.6;
+  transform: scale(1.2);
+}
+.fa-instagram:hover {
+  opacity: 0.6;
+  transform: scale(1.2);
+}
+.soc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+.map {
+  max-width: 600px;
+}
+/* end section contacts*/
+
+/* end section contacts*/
+.gotopbtn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: white;
+  bottom: 40px;
+  right: 22px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #333;
+  font-size: 22px;
+  opacity: 0.75;
+}
+.lead {
+  color: white;
+  font-family: "Carter One", cursive;
+}
+
+/*@media*/
+@media (max-width: 992px) {
+  .nav-link {
+    padding: 0.5rem 1rem !important;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  #section-about {
+    background: url(./images/fff.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #eee;
+    margin: 1%;
+  }
+}
+@media (min-width: 992px) {
+  #main-nav .nav-pills .nav-link.active,
+  #main-nav .nav-pills .show > .nav-link {
+    background-color: white;
+    border-radius: 0;
+  }
+}
+@media (max-width: 992px) {
+  #main-nav .nav-pills .nav-link.active,
+  #main-nav .nav-pills .show > .nav-link {
+    background-color: #333;
+  }
+}
+@media (max-width: 1250px) {
+  #header__content {
+    background-size: cover;
+  }
+}
+@media (max-width: 560px) {
+  #header_content {
+    width: 100vw;
+  }
+}
+/*end @media*/
