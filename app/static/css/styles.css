@@ -66,6 +66,17 @@ h2 {
 #main-nav .navbar-nav .show > .nav-link {
   color: white;
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  #section-about {
+    background: url(./images/fff.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #eee;
+    margin: 1%;
+  }
+}
 
 @media (min-width: 992px) {
   #main-nav .nav-pills .nav-link.active,
