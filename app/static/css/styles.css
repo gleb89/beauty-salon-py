@@ -664,8 +664,12 @@ ul li i:after {
   }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
-  #header__content {
-    background: black;
+  #header_content {
+    background-image: url(./images/onas.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
   }
 }
 /*end @media*/
