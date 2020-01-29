@@ -663,4 +663,9 @@ ul li i:after {
     width: 100vw;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  #header__content {
+    background: black;
+  }
+}
 /*end @media*/
