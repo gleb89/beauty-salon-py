@@ -677,10 +677,6 @@ ul li i:after {
     text-align: center;
   }
   
-  @media (max-width: 560px) {
-    .yslugi {
-      opacity: 1;
-      }
-  }
+  
 
 /*end @media*/
