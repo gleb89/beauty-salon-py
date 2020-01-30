@@ -373,7 +373,7 @@ footer {
   color: #eee;
   margin: 1%;
   background: url(./images/fff.jpg) 50% -0.6rem no-repeat;
-  background-size: 120% 100%;
+  background-size: cover;
   background-position: center top;
   background-attachment: fixed;
 }
