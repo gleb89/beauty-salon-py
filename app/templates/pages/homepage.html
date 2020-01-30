@@ -45,11 +45,11 @@
     <h2 class="ivi">Услуги</h2>
   </div>
   <div class="section-common__content container ">
-    <div class="column ">
+    <div class="row ">
       
       {% for service in services %}
       {% if service.show %}
-      <div class="col-md-4 ">
+      <div class="col-md-12 ">
         <div class="card  mb-4 shadow-sm text-center " >
           {% if service.image %}
           <img class="img-thumbnail gap  " src="{{ url_for('static', filename=service.image) }}" alt="">
