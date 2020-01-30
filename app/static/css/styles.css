@@ -373,8 +373,8 @@ footer {
   color: #eee;
   margin: 1%;
   background: url(./images/fff.jpg) 50% -0.6rem no-repeat;
-
-  background-position: center top;
+  background-size: 100% 100%;
+  background-position: center;
   background-attachment: fixed;
 }
 .onas {
