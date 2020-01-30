@@ -505,7 +505,7 @@ ul li i:after {
 /*section gallery*/
 #section-gallery {
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   background-image: url(./images/mmmmm.jpg);
   color: #eee;
