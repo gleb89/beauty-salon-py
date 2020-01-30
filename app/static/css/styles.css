@@ -540,6 +540,9 @@ ul li i:after {
   color: #eee;
   margin: 1%;
 }
+.section-common__content .container {
+  background-color: tomato;
+}
 .section-common__tit {
   color: #000;
   text-align: center;
