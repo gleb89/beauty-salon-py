@@ -35,9 +35,6 @@ h1 {
 h2 {
   font-family: "Carter One", cursive;
 }
-.font {
-  font-size: 80px;
-}
 
 /*navbar*/
 
@@ -658,5 +655,9 @@ ul li i:after {
     width: 100vw;
   }
 }
-
+@media (max-width: 560px) {
+  .font {
+    font-size: 17px;
+  }
+}
 /*end @media*/
