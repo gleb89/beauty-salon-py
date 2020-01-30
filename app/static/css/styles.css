@@ -666,6 +666,7 @@ ul li i:after {
     font-size: 32px;
     font-weight: 900;
     -webkit-text-stroke: 2px white;
+    text-align: center;
   }
 }
 @media (max-width: 560px) {
