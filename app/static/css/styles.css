@@ -208,7 +208,7 @@ h2 {
 
 /* animations icon */
 
-@keyframes shake {
+/*@keyframes shake {
   0% {
     transform: rotateZ(0deg);
     -ms-transform: rotateZ(0deg);
@@ -322,7 +322,7 @@ h2 {
     -ms-transform: rotateZ(0deg);
     -webkit-transform: rotateZ(0deg);
   }
-}
+}*/
 /* end btn call */
 
 /*header*/
