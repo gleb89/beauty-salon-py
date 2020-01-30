@@ -658,6 +658,12 @@ ul li i:after {
 @media (max-width: 560px) {
   .font {
     font-size: 26px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 560px) {
+  .pont {
+    font-size: 32px;
     font-weight: 900;
   }
 }
