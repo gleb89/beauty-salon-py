@@ -665,8 +665,7 @@ ul li i:after {
   .pont {
     font-size: 32px;
     font-weight: 900;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke: 2px white;
   }
 }
 @media (max-width: 560px) {
