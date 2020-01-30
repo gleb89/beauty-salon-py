@@ -665,8 +665,7 @@ ul li i:after {
   .pont {
     font-size: 32px;
     font-weight: 900;
-    -webkit-text-stroke-width: 0.6px;
-    -webkit-text-stroke-color: white;
+  
     text-align: center;
   }
 }
@@ -677,13 +676,11 @@ ul li i:after {
     
     text-align: center;
   }
-
-@media (max-width: 560px) {
-  input h2 {
-    font-size: 32px;
-    font-weight: 900;
-    -webkit-text-stroke-width: 0.6px;
-    -webkit-text-stroke-color: white;
-    text-align: center;
+  
+  @media (max-width: 560px) {
+    .yslugi {
+      opacity: 1;
+      }
   }
+
 /*end @media*/
