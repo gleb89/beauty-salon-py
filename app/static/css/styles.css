@@ -666,10 +666,17 @@ ul li i:after {
     font-size: 32px;
     font-weight: 900;
     -webkit-text-stroke-width: 0.6px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: white;
     text-align: center;
   }
 }
+@media (max-width: 560px) {
+  .ponts {
+    font-size: 32px;
+    font-weight: 900;
+    
+    text-align: center;
+  }
 @media (max-width: 560px) {
   .imgn {
     display: none;
