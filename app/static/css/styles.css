@@ -372,10 +372,10 @@ footer {
   background-attachment: fixed;*/
   color: #eee;
   margin: 1%;
-  background: url(./images/fff.jpg) 50% -0.6rem no-repeat;
-  background-size: 100% auto;
-  background-position: center top;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./images/zz.jpg);
 }
 .onas {
   margin-top: 70px;
