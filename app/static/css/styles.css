@@ -551,7 +551,7 @@ ul li i:after {
   border-radius: 2%;
 }
 .container-yslugi {
-  display: grid;
+  display: flex;
 
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
