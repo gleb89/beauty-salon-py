@@ -556,6 +556,9 @@ ul li i:after {
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
 }
+.col-md-4 {
+  justify-content: center;
+}
 .card-body {
   font-size: 18px;
   font-family: "Carter One", cursive;
