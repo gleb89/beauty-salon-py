@@ -655,7 +655,7 @@ ul li i:after {
     width: 100vw;
   }
 }
-@media (min-width: 560px) {
+@media (max-width: 560px) {
   .font {
     font-size: 26px;
   }
