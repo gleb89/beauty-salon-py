@@ -543,7 +543,7 @@ ul li i:after {
 .section-common__content {
   background-color: tomato;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
 }
 .section-common__tit {
