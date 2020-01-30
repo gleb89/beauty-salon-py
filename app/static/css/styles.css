@@ -550,6 +550,11 @@ ul li i:after {
   margin-top: 100px;
   border-radius: 2%;
 }
+.container-yslugi {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+}
 .card-body {
   font-size: 18px;
   font-family: "Carter One", cursive;
