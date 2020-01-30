@@ -667,4 +667,9 @@ ul li i:after {
     font-weight: 900;
   }
 }
+@media (max-width: 560px) {
+  .img {
+    display: none;
+  }
+}
 /*end @media*/
