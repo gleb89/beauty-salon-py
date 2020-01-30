@@ -385,11 +385,10 @@ footer {
 
 /*section prices*/
 #section-prices {
-  background: url(./images/mm.jpg);
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-image: url(./images/mm.jpg);
   color: black;
   margin: 1%;
 }
@@ -505,11 +504,10 @@ ul li i:after {
 
 /*section gallery*/
 #section-gallery {
-  background: url(./images/mmmmm.jpg);
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-image: url(./images/mmmmm.jpg);
   color: #eee;
   margin: 1%;
 }
