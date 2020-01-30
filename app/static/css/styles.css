@@ -665,7 +665,7 @@ ul li i:after {
   .pont {
     font-size: 32px;
     font-weight: 900;
-  
+
     text-align: center;
   }
 }
@@ -673,10 +673,13 @@ ul li i:after {
   .ponts {
     font-size: 32px;
     font-weight: 900;
-    
     text-align: center;
   }
-  
-  
+}
 
+@media (max-width: 560px) {
+  .imgn {
+    opacity: 1;
+  }
+}
 /*end @media*/
