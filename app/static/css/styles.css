@@ -682,4 +682,12 @@ ul li i:after {
     display: none;
   }
 }
+@media (max-width: 560px) {
+  input h2 {
+    font-size: 32px;
+    font-weight: 900;
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: white;
+    text-align: center;
+  }
 /*end @media*/
