@@ -677,11 +677,7 @@ ul li i:after {
     
     text-align: center;
   }
-@media (max-width: 560px) {
-  .imgn {
-    display: none;
-  }
-}
+
 @media (max-width: 560px) {
   input h2 {
     font-size: 32px;
