@@ -536,6 +536,7 @@ ul li i:after {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  position: fixed;
 
   color: #eee;
   margin: 1%;
@@ -732,6 +733,16 @@ ul li i:after {
 @media (max-width: 770px) {
   .card-body {
     height: 270px;
+  }
+}
+@media (max-width: 560px) {
+  #section-services {
+    background-image: url(./images/serv.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    color: #eee;
+    margin: 1%;
   }
 }
 
