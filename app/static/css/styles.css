@@ -729,5 +729,10 @@ ul li i:after {
     font-size: 26px;
   }
 }
+@media (max-width: 770px) {
+  .card {
+    height: 190px;
+  }
+}
 
 /*end @media*/
