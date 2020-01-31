@@ -393,6 +393,11 @@ footer {
   color: black;
   margin: 1%;
 }
+@media (max-width: 560px) {
+  #section-prices {
+    background-attachment: local;
+  }
+}
 
 .container_prices {
   display: grid;
