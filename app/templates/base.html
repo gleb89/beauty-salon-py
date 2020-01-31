@@ -125,27 +125,7 @@
     <script>
       new WOW().init();
     </script>
-    <script>
-      $(function() {
-        $(".koducion-mautegad").on("click", function(e) {
-          e.preventDefault();
-          if ($(this).hasClass("pevuden")) {
-            $(this).removeClass("pevuden");
-            $(this)
-              .next()
-              .stop()
-              .slideUp(300);
-          } else {
-            $(this).addClass("pevuden");
-            $(this)
-              .next()
-              .stop()
-              .slideDown(300);
-          }
-        });
-      });
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
     <script src="{{ url_for('static', filename='js/navbar-collapse.js') }}"></script>
     {% include 'includes/site_statistics.html' %}
   </body>
