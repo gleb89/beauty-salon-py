@@ -405,6 +405,9 @@ footer {
   color: black;
   margin: 1%;
 }
+.section-common__content {
+  margin: 5%;
+}
 @media (max-width: 560px) {
   #section-prices {
     background-attachment: local;
