@@ -709,6 +709,14 @@ ul li i:after {
   }
 }
 @media (max-width: 560px) {
+  .fontr {
+    font-size: 20px;
+    font-weight: 700;
+
+    text-align: center;
+  }
+}
+@media (max-width: 560px) {
   .ponts {
     font-size: 26px;
     font-weight: 700;
