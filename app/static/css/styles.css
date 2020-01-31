@@ -389,7 +389,7 @@ footer {
   background-position: center;
   background-size: cover;
   background-image: url(./images/mm.jpg);
-  background-attachment: local;
+  background-attachment: fixed;
   color: black;
   margin: 1%;
 }
