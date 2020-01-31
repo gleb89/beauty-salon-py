@@ -691,7 +691,7 @@ ul li i:after {
   }
 }
 @media (max-width: 770px) {
-  .soc {
+  .soc .fa-instagram:before {
     margin-left: 45px;
   }
 }
