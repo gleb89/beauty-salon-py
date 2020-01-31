@@ -691,8 +691,9 @@ ul li i:after {
   }
 }
 @media (max-width: 770px) {
-  .soc .fa-instagram:before {
-    margin-left: 45px;
+  .soc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 /*end @media*/
