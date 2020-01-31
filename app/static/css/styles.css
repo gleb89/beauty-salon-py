@@ -690,4 +690,9 @@ ul li i:after {
     margin-left: 50px;
   }
 }
+@media (max-width: 770px) {
+  .soc {
+    justify-content: center;
+  }
+}
 /*end @media*/
