@@ -406,7 +406,8 @@ footer {
   margin: 1%;
 }
 .section-common__content {
-  margin: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 @media (max-width: 560px) {
   #section-prices {
