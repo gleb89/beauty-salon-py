@@ -714,7 +714,6 @@ ul li i:after {
   .in {
     display: flex;
     justify-content: flex-end;
-    margin-right: auto;
   }
 }
 /*end @media*/
