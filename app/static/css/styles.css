@@ -717,4 +717,11 @@ ul li i:after {
     margin-right: 10px;
   }
 }
+
+@media (max-width: 770px) {
+  .card-title {
+    font-size: 32px;
+  }
+}
+
 /*end @media*/
