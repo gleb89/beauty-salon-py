@@ -700,6 +700,21 @@ ul li i:after {
     font-weight: 700;
   }
 }
+@media (max-width: 560px) {
+  .pont {
+    font-size: 26px;
+    font-weight: 700;
+
+    text-align: center;
+  }
+}
+@media (max-width: 560px) {
+  .ponts {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+  }
+}
 
 @media (max-width: 560px) {
   .imgn {
