@@ -523,10 +523,7 @@ ul li i:after {
     transform: rotateX(0deg);
   }
 }
-input {
-  width: 700px;
-  height: 600px;
-}
+
 /*end section prices*/
 
 /*section gallery*/
