@@ -1,7 +1,7 @@
 from app import app
 from .config import *
 
-from flask import render_template, request, redirect, flash, url_for
+from flask import render_template, request, redirect, flash, url_for, send_from_directory
 from flask_mail import Message
 
 from .forms import *
@@ -52,3 +52,10 @@ def homepage():
         print(e)
 
     return render_template('pages/homepage.html', services=reade_content_json('app/content/services.json'), gallery=gallery, form_callback=form_callback)
+
+
+@app.route('/robots.txt')
+@app.route('/sitemap.xml')
+def static_files():
+    print(request.path)
+    return send_from_directory(app.static_folder, request.path[1:])

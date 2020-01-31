@@ -6,7 +6,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Студия красоты «Beauty Room» в городе Камышин</title>
+    <meta name="description" content="{{ site_description }}" />
+    {% include 'includes/favicons.html' %} {% include 'includes/og_tags.html' %}
+    <title>{{ site_title }}</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -43,6 +45,7 @@
       ver="1.03"
       href="{{ url_for('static', filename='css/styles.css') }}"
     />
+    {% include 'includes/site_verification.html' %}
   </head>
 
   <body data-spy="scroll" data-target="#main-nav" data-offset="200">
@@ -122,5 +125,6 @@
       new WOW().init();
     </script>
     <script src="{{ url_for('static', filename='js/navbar-collapse.js') }}"></script>
+    {% include 'includes/site_statistics.html' %}
   </body>
 </html>

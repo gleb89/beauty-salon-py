@@ -1,0 +1,15 @@
+User-agent: Yandex
+Crawl-delay: 2
+
+User-agent: *
+Crawl-delay: 3
+
+Disallow: /static/css/
+Disallow: /static/js/
+Disallow: /static/images/favicons/
+
+Allow: /static/images/*.jpg
+Allow: /static/images/*.png
+
+Host: https://your-domain.ru/
+Sitemap: https://your-domain.ru/sitemap.xml
