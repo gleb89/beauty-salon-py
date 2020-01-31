@@ -11,5 +11,5 @@ Disallow: /static/images/favicons/
 Allow: /static/images/*.jpg
 Allow: /static/images/*.png
 
-Host: https://your-domain.ru/
-Sitemap: https://your-domain.ru/sitemap.xml
+Host: https://http://beautykam.ru//
+Sitemap: https://http://beautykam.ru//sitemap.xml
