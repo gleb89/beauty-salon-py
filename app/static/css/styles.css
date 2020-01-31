@@ -532,7 +532,6 @@ ul li i:after {
 
 /*section services*/
 #section-services {
-  background-image: url(./images/serv.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
