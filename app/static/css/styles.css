@@ -563,6 +563,7 @@ ul li i:after {
 .card {
   background-color: white;
   width: 18rem;
+  margin-left: 20px;
 }
 /*end section services*/
 
@@ -682,6 +683,11 @@ ul li i:after {
 @media (max-width: 560px) {
   .imgn {
     opacity: 1;
+  }
+}
+@media (max-width: 560px) {
+  .card {
+    margin-left: 20px;
   }
 }
 /*end @media*/
