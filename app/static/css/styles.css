@@ -394,11 +394,7 @@ footer {
   color: black;
   margin: 1%;
 }
-@media only screen and (max-width: 768px) {
-  #section-prices {
-    background-size: 100% 100vh;
-  }
-}
+
 .container_prices {
   display: grid;
   grid-template-columns: 1fr;
