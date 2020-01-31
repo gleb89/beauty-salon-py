@@ -698,7 +698,8 @@ ul li i:after {
   }
 }
 @media (max-width: 770px) {
-  .fa-whatsapp:before {
+  .wats {
+    display: flex;
     justify-content: flex-start;
   }
 }
