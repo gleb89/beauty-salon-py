@@ -376,6 +376,12 @@ footer {
   background-position: center;
   background-size: cover;
   background-image: url(./images/fff.jpg);
+  background-attachment: fixed;
+}
+@media (max-width: 560px) {
+  #section-about {
+    background-attachment: local;
+  }
 }
 .onas {
   margin-top: 70px;
@@ -517,6 +523,12 @@ ul li i:after {
   background-image: url(./images/mmmmm.jpg);
   color: #eee;
   margin: 1%;
+  background-attachment: fixed;
+}
+@media (max-width: 560px) {
+  #section-gallery {
+    background-attachment: local;
+  }
 }
 .img-thumbnail {
   background-color: #eee;
@@ -543,9 +555,14 @@ ul li i:after {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-
+  background-attachment: fixed;
   color: #eee;
   margin: 1%;
+}
+@media (max-width: 560px) {
+  #section-services {
+    background-attachment: local;
+  }
 }
 
 .section-common__tit {
