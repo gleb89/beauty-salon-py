@@ -376,7 +376,6 @@ footer {
   background-position: center;
   background-size: cover;
   background-image: url(./images/fff.jpg);
-  background-attachment: fixed;
 }
 .onas {
   margin-top: 70px;
@@ -390,7 +389,6 @@ footer {
   background-position: center;
   background-size: cover;
   background-image: url(./images/mm.jpg);
-  background-attachment: fixed;
   color: black;
   margin: 1%;
 }
@@ -507,10 +505,9 @@ ul li i:after {
 /*section gallery*/
 #section-gallery {
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   background-image: url(./images/mmmmm.jpg);
-  background-attachment: fixed;
   color: #eee;
   margin: 1%;
 }
@@ -537,7 +534,7 @@ ul li i:after {
 #section-services {
   background-image: url(./images/serv.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   background-size: cover;
   background-attachment: fixed;
   color: #eee;
