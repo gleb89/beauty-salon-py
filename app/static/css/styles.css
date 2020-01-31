@@ -15,6 +15,9 @@ section {
 header {
   margin: 1%;
 }
+nav {
+  margin: 1px;
+}
 .container {
   font-family: "Carter One", cursive;
 }
