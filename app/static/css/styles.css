@@ -731,7 +731,7 @@ ul li i:after {
 }
 @media (max-width: 770px) {
   .card-body {
-    height: 250px;
+    height: 270px;
   }
 }
 
