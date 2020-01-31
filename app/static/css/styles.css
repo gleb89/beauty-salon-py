@@ -730,8 +730,8 @@ ul li i:after {
   }
 }
 @media (max-width: 770px) {
-  .card {
-    height: 190px;
+  .card-body {
+    height: 250px;
   }
 }
 
