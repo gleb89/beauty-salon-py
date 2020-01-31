@@ -694,6 +694,7 @@ ul li i:after {
   .soc {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
   }
 }
 /*end @media*/
