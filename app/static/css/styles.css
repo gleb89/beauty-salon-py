@@ -686,7 +686,7 @@ ul li i:after {
   }
 }
 @media (max-width: 996px) {
-  .card {
+  .cards {
     margin-left: 40px;
   }
 }
