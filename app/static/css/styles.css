@@ -474,10 +474,10 @@ ul li i:after {
   height: 9px;
 }
 #section-prices ul li i:before {
-  transform: translate(-2px, 0) rotate(45deg);
+  transform: translate(-2px, 0);
 }
 #section-prices ul li i:after {
-  transform: translate(2px, 0) rotate(-45deg);
+  transform: translate(2px, 0);
 }
 #section-prices ul li input[type="checkbox"] {
   position: absolute;
@@ -494,10 +494,10 @@ ul li i:after {
   transform: translate(0, 50%);
 }
 #section-prices ul li input[type="checkbox"]:checked ~ i:before {
-  transform: translate(2px, 0) rotate(45deg);
+  transform: translate(2px, 0);
 }
 #section-prices ul li input[type="checkbox"]:checked ~ i:after {
-  transform: translate(-2px, 0) rotate(-45deg);
+  transform: translate(-2px, 0);
 }
 
 @keyframes flipdown {
