@@ -697,4 +697,17 @@ ul li i:after {
     justify-content: center;
   }
 }
+@media (max-width: 770px) {
+  .fa-whatsapp:before {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 770px) {
+  .soc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+}
+
 /*end @media*/
