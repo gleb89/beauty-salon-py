@@ -126,24 +126,24 @@
       new WOW().init();
     </script>
     <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-          /* Toggle between adding and removing the "active" class,
-              to highlight the button that controls the panel */
-          this.classList.toggle("active");
-
-          /* Toggle between hiding and showing the active panel */
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
+      $(function() {
+        $(".koducion-mautegad").on("click", function(e) {
+          e.preventDefault();
+          if ($(this).hasClass("pevuden")) {
+            $(this).removeClass("pevuden");
+            $(this)
+              .next()
+              .stop()
+              .slideUp(300);
           } else {
-            panel.style.display = "block";
+            $(this).addClass("pevuden");
+            $(this)
+              .next()
+              .stop()
+              .slideDown(300);
           }
         });
-      }
+      });
     </script>
     <script src="{{ url_for('static', filename='js/navbar-collapse.js') }}"></script>
     {% include 'includes/site_statistics.html' %}
