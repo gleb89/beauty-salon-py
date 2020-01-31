@@ -12,6 +12,9 @@ body {
 section {
   margin-top: 30px;
 }
+header {
+  margin: 1%;
+}
 .container {
   font-family: "Carter One", cursive;
 }
