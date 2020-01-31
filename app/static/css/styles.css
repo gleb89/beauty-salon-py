@@ -685,7 +685,7 @@ ul li i:after {
     opacity: 1;
   }
 }
-@media (max-width: 560px) {
+@media (min-width: 560px) {
   .card {
     margin-left: 20px;
   }
