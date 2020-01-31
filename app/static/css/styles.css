@@ -424,6 +424,11 @@ footer {
   margin: 10px;
 }
 
+#accordion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
 .dropdown-pt {
   display: grid;
   grid-template-rows: 1fr;
@@ -470,10 +475,10 @@ ul li i:after {
   height: 9px;
 }
 #section-prices ul li i:before {
-  transform: translate(-2px, 0);
+  transform: translate(-2px, 0) rotate(45deg);
 }
 #section-prices ul li i:after {
-  transform: translate(2px, 0);
+  transform: translate(2px, 0) rotate(-45deg);
 }
 #section-prices ul li input[type="checkbox"] {
   position: absolute;
@@ -490,10 +495,10 @@ ul li i:after {
   transform: translate(0, 50%);
 }
 #section-prices ul li input[type="checkbox"]:checked ~ i:before {
-  transform: translate(2px, 0);
+  transform: translate(2px, 0) rotate(45deg);
 }
 #section-prices ul li input[type="checkbox"]:checked ~ i:after {
-  transform: translate(-2px, 0);
+  transform: translate(-2px, 0) rotate(-45deg);
 }
 
 @keyframes flipdown {
