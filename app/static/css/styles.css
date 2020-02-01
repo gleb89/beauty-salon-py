@@ -182,6 +182,7 @@ section {
     width: 100vw;
     height: 100vh;
     -webkit-text-stroke: 0.3px #000000;
+    background-size: cover;
   }
 }
 #section-services {
