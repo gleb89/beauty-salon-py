@@ -18,19 +18,41 @@ body {
   background-color: #eee;
 }
 
+#header {
+  background-color: white;
+}
 #header__content {
-  background-color: #2c222d;
-  background-image: url("../images/beauty-bg.jpg");
   background-repeat: no-repeat;
-  background-position: 100% 0;
-  background-size: contain;
-  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./images/zz.jpg);
 
   color: white;
   height: 95vh;
 
   display: flex;
   align-items: center;
+}
+
+#header__content h1 {
+  font-family: "Carter One", cursive;
+  font-size: 70px;
+  color: #fff !important;
+  text-shadow: 2px 2px 2px #000;
+}
+#header__content h3 {
+  color: #fff !important;
+  text-shadow: 1px 1px 1px #000;
+  font-family: "Carter One", cursive;
+}
+
+#main-nav {
+  background: white;
+}
+
+#main-nav #contacts a {
+  color: #eee;
+  font-family: "Carter One", cursive;
 }
 
 @media (max-width: 1250px) {
