@@ -26,7 +26,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(./images/bbb.jpg);
+  background-image: url(./images/zz.jpg);
 
   color: white;
   height: 95vh;
@@ -45,6 +45,20 @@ body {
   color: #fff !important;
   text-shadow: 1px 1px 1px #000;
   font-family: "Carter One", cursive;
+}
+.onas {
+  margin-top: 70px;
+  opacity: 0.5;
+}
+section {
+  margin-top: 30px;
+}
+.card-body {
+  height: 150px;
+}
+.soc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
 }
 
 #main-nav {
