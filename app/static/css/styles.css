@@ -442,7 +442,7 @@ ul li i:after {
 
 .callback-bt {
   background: #38a3fd;
-  border: solid #38a3fd;
+  border: solid green;
   border-radius: 50%;
   box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3);
   cursor: pointer;
@@ -456,7 +456,7 @@ ul li i:after {
   transition: 0.3s;
   -webkit-animation: hoverWave linear 1s infinite;
   animation: hoverWave linear 1s infinite;
-  border-radius: 50 %;
+  border-radius: 50%;
 }
 
 .callback-bt .text-call {
