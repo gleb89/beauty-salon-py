@@ -419,6 +419,7 @@ ul li i:after {
 @media (max-width: 560px) {
   #header_content {
     width: 100vw;
+    height: 100vh;
     -webkit-text-stroke: 0.3px #000000;
   }
 }
