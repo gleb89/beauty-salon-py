@@ -177,6 +177,10 @@ section {
   background-position: 100% 0;
   background-size: contain;
   background-attachment: fixed;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: 100%; /* Современные браузеры */
 
   color: white;
   height: 70vh;
@@ -446,7 +450,3 @@ ul li i:after {
     text-align: center;
   }
 }
--moz-background-size: 100%; /* Firefox 3.6+ */
--webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
--o-background-size: 100%; /* Opera 9.6+ */
-background-size: 100%; /* Современные браузеры */
