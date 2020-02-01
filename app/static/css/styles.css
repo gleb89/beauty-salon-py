@@ -27,7 +27,7 @@ body {
   background-attachment: fixed;
 
   color: white;
-  height: 70vh;
+  height: 95vh;
 
   display: flex;
   align-items: center;
@@ -45,18 +45,8 @@ body {
   margin-bottom: 40px;
   text-shadow: 0 3px 3px black;
 }
-
-#header__content #motto {
-  font-size: 1.4rem;
-  color: #eee;
-  text-shadow: 0 1px 0 black;
-}
-
-@media (min-width: 1250px) {
-  #header__content #motto {
-    width: 60%;
-    margin: 0 auto;
-  }
+#header {
+  background-color: white;
 }
 
 /* Main navigation */
