@@ -179,9 +179,12 @@ section {
 
 @media (max-width: 560px) {
   #header_content {
-    height: 100vh;
-    -webkit-text-stroke: 0.3px #000000;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    background-image: url(./images/bbb.jpg);
+    background-attachment: fixed;
+    -webkit-text-stroke: 0.3px #000000;
   }
 }
 #section-services {
