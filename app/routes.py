@@ -39,8 +39,8 @@ def process_callback_form(form_callback):
 
 @app.route('/', methods=['GET', 'POST'])
 def homepage():
-    page_title = 'Салон красоты Beauty Room'
-    page_descr = 'Доверьте ваш неповторимый образ нашему мастерству'
+    page_title = '<<Beauty Room>>'
+    page_descr = 'Студия красоты'
 
     form_callback = CallbackForm()
     if form_callback.validate_on_submit():
