@@ -40,6 +40,9 @@ def process_callback_form(form_callback):
 
 @app.route('/', methods=['GET', 'POST'])
 def homepage():
+    page_title = 'Beauty Room'
+    page_descr = 'Студия красоты'
+
     form_callback = CallbackForm()
     if form_callback.validate_on_submit():
         process_callback_form(form_callback)
@@ -51,7 +54,8 @@ def homepage():
     except Exception as e:
         print(e)
 
-    return render_template('pages/homepage.html', services=reade_content_json('app/content/services.json'), gallery=gallery, form_callback=form_callback)
+    return render_template('pages/homepage.html', services=reade_content_json('app/content/services.json'), gallery=gallery, form_callback=form_callback, page_title=page_title,
+                           page_descr=page_descr,)
 
 
 @app.route('/robots.txt')
@@ -59,3 +63,18 @@ def homepage():
 def static_files():
     print(request.path)
     return send_from_directory(app.static_folder, request.path[1:])
+
+    @app.errorhandler(404)
+def page_not_found(e):
+    page_title = 'Страница не существует 404'
+    page_descr = ''
+
+    form_callback = CallbackForm()
+    if form_callback.validate_on_submit():
+        process_callback_form(form_callback)
+        return redirect(url_for('homepage'))
+    return render_template('errors/404.html',
+                           page_title=page_title,
+                           page_descr=page_descr,
+                           form_callback=form_callback
+                           ), 404
