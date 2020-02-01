@@ -442,22 +442,20 @@ ul li i:after {
 
 .callback-bt {
   background: #38a3fd;
-
-  opacity: 0.7;
+  border: solid #38a3fd;
   border-radius: 50%;
   box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3);
   cursor: pointer;
   height: 68px;
   text-align: center;
   width: 68px;
-
-  left: 4%;
+  position: fixed;
+  right: 8%;
   bottom: 18%;
   z-index: 999;
   transition: 0.3s;
   -webkit-animation: hoverWave linear 1s infinite;
   animation: hoverWave linear 1s infinite;
-  border-radius: 50%;
 }
 
 .callback-bt .text-call {
@@ -466,6 +464,7 @@ ul li i:after {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
+  border-radius: 50%;
 }
 
 .callback-bt .text-call span {
@@ -671,6 +670,7 @@ ul li i:after {
     -webkit-transform: rotateZ(0deg);
   }
 }
+/* конец кнопки звонка */
 .kal {
   display: grid;
   justify-content: center;
