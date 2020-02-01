@@ -456,6 +456,7 @@ ul li i:after {
   transition: 0.3s;
   -webkit-animation: hoverWave linear 1s infinite;
   animation: hoverWave linear 1s infinite;
+  border-radius: 50 %;
 }
 
 .callback-bt .text-call {
