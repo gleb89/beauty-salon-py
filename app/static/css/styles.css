@@ -725,16 +725,6 @@ ul li i:after {
   }
 }
 
-@media (max-width: 560px) {
-  .imgn {
-    opacity: 1;
-  }
-}
-@media (max-width: 996px) {
-  .cards {
-    margin-left: 20px;
-  }
-}
 @media (max-width: 770px) {
   .soc {
     display: grid;
@@ -763,17 +753,6 @@ ul li i:after {
   }
 }
 
-@media (max-width: 770px) {
-  .card-title {
-    font-size: 32px;
-  }
-}
-
-@media (max-width: 770px) {
-  .card-text {
-    font-size: 26px;
-  }
-}
 @media (max-width: 770px) {
   .card-body {
     height: 270px;
