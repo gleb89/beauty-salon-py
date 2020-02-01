@@ -171,6 +171,10 @@ section {
 #navbarSupportedContent {
   color: #000;
 }
+button {
+  color: white;
+  background-color: gold;
+}
 
 #section-services {
   background-image: url(./images/serv.jpg);
