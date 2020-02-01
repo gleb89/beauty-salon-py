@@ -367,3 +367,23 @@ ul li i:after {
     transform: rotateX(0deg);
   }
 }
+@media (max-width: 770px) {
+  .soc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+}
+@media (max-width: 770px) {
+  .in {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 770px) {
+  .wats {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
