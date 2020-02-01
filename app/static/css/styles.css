@@ -165,7 +165,11 @@ section {
 @media (max-width: 560px) {
   #header__content {
     background-attachment: local;
+    min-height: 90vh;
   }
+}
+navbar {
+  color: #000;
 }
 
 #section-services {
