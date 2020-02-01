@@ -450,7 +450,7 @@ ul li i:after {
   height: 68px;
   text-align: center;
   width: 68px;
-
+  border-radius: 50%;
   right: 8%;
   bottom: 18%;
   z-index: 999;
