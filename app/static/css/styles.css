@@ -27,10 +27,11 @@ body {
   font-family: "Carter One", cursive;
   font-size: 70px;
   color: #fff !important;
+  text-shadow: 2px 2px 2px #000;
 }
 #header__content h3 {
   color: #fff !important;
-
+  text-shadow: 1px 1px 1px #000;
   font-family: "Carter One", cursive;
 }
 .onas {
@@ -68,6 +69,7 @@ section {
   font-size: 4rem;
   line-height: 1.1;
   margin-bottom: 40px;
+  text-shadow: 1px black;
 }
 #header {
   background-color: white;
@@ -115,7 +117,6 @@ section {
 @media (max-width: 560px) {
   #header_content {
     width: 100vw;
-    -webkit-text-stroke: 0.5px #000000;
   }
 }
 
@@ -168,12 +169,20 @@ section {
   -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
   -o-background-size: 100%; /* Opera 9.6+ */
   background-size: 100%; /* Современные браузеры */
-
+  min-height: 100vh;
   color: white;
   -webkit-text-stroke: 1px #000000;
 
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 560px) {
+  #header_content {
+    width: 100vw;
+    height: 100vh;
+    -webkit-text-stroke: 0.3px #000000;
+  }
 }
 #section-services {
   background-image: url(./images/serv.jpg);
