@@ -443,7 +443,7 @@ ul li i:after {
 .callback-bt {
   background: #38a3fd;
   border: solid;
-  border-radius: 150%;
+  border-radius: 50%;
   box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3);
   cursor: pointer;
   height: 68px;
