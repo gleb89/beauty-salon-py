@@ -45,28 +45,43 @@
   
 </section>
 {% if gallery %}
-        <section id="section-gallery" class="section-common">
-            <div class="section-common__title container">
-                <h2>Фотогалерея</h2>
-            </div>
-            <div class="section-common__content container">
-                <div class="row">
-                    {% for gal in gallery %}
-                        {% if gal.show %}
-                            {% set image_base_path = 'images/gallery/' %}
-                            {% set image_path = image_base_path ~ gal.image %}
-                            {% set image_thumb_path = image_base_path ~ 'thumbnails/thumb_' ~ gal.image %}
-                            <div class="gallery-img col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
-                                <a href="{{ url_for('static', filename=image_path) }}" data-fancybox="gallery"{% if gal.title %} data-caption="{{ gal.title }}"{% endif %}>
-                                    <img class="img-thumbnail" src="{{ url_for('static', filename=image_thumb_path) }}" alt="{% if gal.title %}{{ gal.title }}{% endif %}">
-                                </a>
-                            </div>
-                        {% endif %}
-                    {% endfor %}
-                </div>
-            </div>
-        </section>
-    {% endif %}
+<section id="section-gallery" class="section-common ">
+  <div class="section-common__title container ">
+    <h2>Фотогалерея</h2>
+  </div>
+  <div class="section-common__content container ">
+    <div class="row">
+
+      {% for gal in gallery %}
+      {% if gal.show %}
+      {% set image_base_path = 'images/gallery/' %}
+      {% set image_path = image_base_path ~ gal.image %}
+      {% set image_thumb_path = image_base_path ~ 'thumbnails/thumb_' ~ gal.image %}
+      <div class="gallery-img col-12 col-sm-6 col-md-4 col-xl-3 mb-4 wow fadeInDown" data-wow-delay="0.5s">
+        <a href="{{ url_for('static', filename=image_path) }}" data-fancybox="gallery" {% if gal.title %}
+          data-caption="{{ gal.title }}" {% endif %}>
+          <img class="img-thumbnail" src="{{ url_for('static', filename=image_thumb_path) }}"
+            alt="{% if gal.title %}{{ gal.title }}{% endif %}">
+        </a>
+      </div>
+      {% endif %}
+      {% endfor %}
+      <div class="container inst text-center">
+        <h4>смотреть больше фото</h4>
+        <a class="" href="https://www.instagram.com/beauty_room_kamyshin/" target="_blank"> <i
+            class="fab fa-instagram"></i>
+        </a>
+      </div>
+     
+      
+
+    </div>
+
+  </div>
+  </div>
+
+</section>
+{% endif %}
 
 
 
