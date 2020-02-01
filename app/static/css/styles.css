@@ -171,6 +171,10 @@ section {
 h5 {
   color: #000;
 }
+footer {
+  background-color: rgb(5, 148, 153);
+  color: #eee;
+}
 .btn {
   color: white;
   background-color: gold;
