@@ -173,3 +173,46 @@ body {
   background-image: url(./images/fff.jpg);
   background-attachment: fixed;
 }
+.gotopbtn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: white;
+  bottom: 40px;
+  right: 22px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #333;
+  font-size: 22px;
+  opacity: 0.75;
+}
+.fa-instagram:before {
+  content: "\f16d";
+  font-size: 80px;
+  color: white;
+}
+.soc .fa-instagram:before {
+  color: #8a3ab9;
+  font-size: 50px;
+}
+.fa-whatsapp:before {
+  content: "\f232";
+  font-size: 50px;
+  color: green;
+}
+.fa-whatsapp:hover {
+  opacity: 0.6;
+  transform: scale(1.2);
+}
+.fa-instagram:hover {
+  opacity: 0.6;
+  transform: scale(1.2);
+}
+.soc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+.map {
+  max-width: 600px;
+}
