@@ -132,3 +132,44 @@ body {
 #section-gallery .gallery-img img:hover {
   opacity: 0.6;
 }
+#section-services {
+  background-image: url(./images/serv.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #eee;
+  margin: 1%;
+}
+#section-gallery {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-image: url(./images/mmmmm.jpg);
+  color: #eee;
+  margin: 1%;
+  background-attachment: fixed;
+}
+#section-prices {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./images/mm.jpg);
+  background-attachment: fixed;
+  color: black;
+  margin: 1%;
+}
+#section-about {
+  /*background: url(./images/fff.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;*/
+  color: #eee;
+  margin: 1%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./images/fff.jpg);
+  background-attachment: fixed;
+}
