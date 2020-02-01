@@ -42,43 +42,16 @@
     </div>
   </div>
 
-  {% if gallery %}
+  
 </section>
-<section id="section-services" class="section-common">
-  <div class="section-common__tit container ">
-    <h2 class="ivi">Услуги</h2>
-  </div>
-  <div class="section-common__content container ">
-    <div class="row ">
-      
-      {% for service in services %}
-      {% if service.show %}
-      <div class="col-md-4 cards ">
-        <div class="card  mb-4 shadow-sm text-center " >
-          {% if service.image %}
-          <img class="img-thumbnail gap  " src="{{ url_for('static', filename=service.image) }}" alt="">
-          {% else %}
-          <img src="https://via.placeholder.com/256x170" class="card-img-top" alt="">
-          {% endif %}
-          <div class="card-body featurette-heading text-center">
-            <h5 class="card-title text-uppercase font-weight-bold">{{ service.title }}</h5>
-            <p class="card-text">{{ service.descr }}</p>
-          </div>
-        </div>
-      </div>
-      {% endif %}
-      {% endfor %}
-    
-    </div>
-  </div>
-</section>-->
-
+{% if gallery %}
 <section id="section-gallery" class="section-common ">
   <div class="section-common__title container ">
     <h2>Фотогалерея</h2>
   </div>
   <div class="section-common__content container ">
     <div class="row">
+
       {% for gal in gallery %}
       {% if gal.show %}
       {% set image_base_path = 'images/gallery/' %}
@@ -99,11 +72,18 @@
             class="fab fa-instagram"></i>
         </a>
       </div>
+     
+      
+
     </div>
+
   </div>
   </div>
+
 </section>
 {% endif %}
+
+
 
 
 <section id="section-prices" class="section-common ">
@@ -262,8 +242,10 @@
             <div class="wats">
 
               <a href="https://wa.me/79370969944/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+
+            </div>
           </div>
-        </div>
 
         </div>
         <div class="mb-3">
