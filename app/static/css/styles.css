@@ -441,8 +441,6 @@ ul li i:after {
 /*кнопка звонка*/
 
 .callback-bt {
-  background: #38a3fd;
-  border: 2px solid #38a3fd;
   opacity: 0.7;
   border-radius: 50%;
   box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3);
@@ -450,7 +448,7 @@ ul li i:after {
   height: 68px;
   text-align: center;
   width: 68px;
-  position: fixed;
+
   left: 4%;
   bottom: 18%;
   z-index: 999;
