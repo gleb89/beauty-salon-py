@@ -16,10 +16,6 @@ body {
 /* END scrollSpy */
 
 #header {
-  background-color: #eee;
-}
-
-#header {
   background-color: white;
 }
 
@@ -114,11 +110,6 @@ section {
     background-size: cover;
   }
 }
-@media (max-width: 560px) {
-  #header_content {
-    width: 100vw;
-  }
-}
 
 #main-nav #contacts a:hover {
   text-decoration: none;
@@ -160,15 +151,11 @@ section {
 }
 #header__content {
   background-color: white;
-  background-image: url("./images/bbb.jpg");
   background-repeat: no-repeat;
-  background-position: 100% 0;
+  background-position: center;
   background-size: cover;
+  background-image: url(./images/mm.jpg);
   background-attachment: fixed;
-  -moz-background-size: 100%; /* Firefox 3.6+ */
-  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-  -o-background-size: 100%; /* Opera 9.6+ */
-  background-size: 100%; /* Современные браузеры */
   min-height: 100vh;
   color: white;
   -webkit-text-stroke: 1px #000000;
