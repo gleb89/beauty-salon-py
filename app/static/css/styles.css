@@ -55,6 +55,7 @@ section {
 }
 .card-body {
   height: 150px;
+  color: #000;
 }
 .soc {
   display: grid;
