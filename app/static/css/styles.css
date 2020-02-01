@@ -26,7 +26,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(./images/zz.jpg) 100vh;
+  background-image: url(./images/zz.jpg);
 
   color: white;
   min-height: 100vh;
@@ -224,6 +224,11 @@ section {
   background-size: cover;
   background-image: url(./images/fff.jpg);
   background-attachment: fixed;
+}
+@media (max-width: 560px) {
+  #section-about {
+    background-attachment: local;
+  }
 }
 .gotopbtn {
   position: fixed;
@@ -423,5 +428,9 @@ ul li i:after {
     font-size: 26px;
     font-weight: 700;
     text-align: center;
+  }
+}
+@media (max-width: 560px) {
+   {
   }
 }
