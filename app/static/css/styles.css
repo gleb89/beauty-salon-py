@@ -81,7 +81,6 @@ section {
   font-size: 4rem;
   line-height: 1.1;
   margin-bottom: 40px;
-  text-shadow: 0 3px 3px black;
 }
 #header {
   background-color: white;
@@ -416,14 +415,7 @@ ul li i:after {
 .ivi {
   text-align: center;
 }
-@media (max-width: 560px) {
-  #header_content {
-    width: 100vw;
-    height: 100vh;
-    color: #000;
-    margin-top: 30px;
-  }
-}
+
 @media (max-width: 560px) {
   .font {
     font-size: 26px;
