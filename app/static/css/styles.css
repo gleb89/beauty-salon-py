@@ -459,6 +459,9 @@ ul li i:after {
   animation: hoverWave linear 1s infinite;
   border-radius: 50%;
 }
+.callback-bt {
+  border-radius: 50%;
+}
 
 .callback-bt .text-call {
   height: 68px;
