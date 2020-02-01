@@ -168,10 +168,10 @@ section {
     min-height: 90vh;
   }
 }
-#navbarSupportedContent {
+.collapse {
   color: #000;
 }
-button {
+.btn {
   color: white;
   background-color: gold;
 }
