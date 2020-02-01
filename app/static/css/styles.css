@@ -154,7 +154,7 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(./images/mm.jpg);
+  background-image: url(./images/bbb.jpg);
   background-attachment: fixed;
   min-height: 100vh;
   color: white;
@@ -164,16 +164,6 @@ section {
   align-items: center;
 }
 
-@media (max-width: 560px) {
-  #header_content {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(./images/bbb.jpg);
-    background-attachment: fixed;
-    -webkit-text-stroke: 0.3px #000000;
-  }
-}
 #section-services {
   background-image: url(./images/serv.jpg);
   background-repeat: no-repeat;
