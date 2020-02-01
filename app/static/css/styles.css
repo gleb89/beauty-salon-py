@@ -22,28 +22,15 @@ body {
 #header {
   background-color: white;
 }
-#header__content {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url(./images/zz.jpg);
-
-  color: white;
-  min-height: 100vh;
-
-  display: flex;
-  align-items: center;
-}
 
 #header__content h1 {
   font-family: "Carter One", cursive;
   font-size: 70px;
   color: #fff !important;
-  text-shadow: 2px 2px 2px #000;
 }
 #header__content h3 {
   color: #fff !important;
-  text-shadow: 1px 1px 1px #000;
+
   font-family: "Carter One", cursive;
 }
 .onas {
@@ -128,6 +115,7 @@ section {
 @media (max-width: 560px) {
   #header_content {
     width: 100vw;
+    -webkit-text-stroke: 0.5px #000000;
   }
 }
 
