@@ -168,7 +168,7 @@ section {
     min-height: 90vh;
   }
 }
-navbar {
+#navbarSupportedContent {
   color: #000;
 }
 
