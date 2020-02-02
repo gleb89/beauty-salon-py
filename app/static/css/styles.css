@@ -6,7 +6,6 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  font-family: "Lobster", cursive;
 }
 
 /* scrollSpy */
@@ -25,10 +24,13 @@ body {
   color: #fff !important;
   text-shadow: 2px 2px 2px #000;
 }
+
 #header__content h3 {
   color: #fff !important;
   text-shadow: 1px 1px 1px #000;
-  font-family: "Carter One", cursive;
+}
+h2 {
+  font-family: "Lobster", cursive;
 }
 .onas {
   margin-top: 70px;
@@ -62,19 +64,7 @@ section {
   }
 }
 
-#header__content h1 {
-  font-size: 4rem;
-  line-height: 1.1;
-  margin-bottom: 40px;
-  text-shadow: 1px black;
-}
-#header {
-  background-color: white;
-}
-
 /* Main navigation */
-#main-nav {
-}
 
 #main-nav #contacts a {
   color: #444;
@@ -117,9 +107,6 @@ section {
 }
 /* END Main navigation */
 
-#content {
-}
-
 #footer {
   background-color: #eee;
 }
@@ -139,8 +126,6 @@ section {
   margin-bottom: 30px;
 }
 
-.section-common__content {
-}
 /* END Sections */
 
 #section-gallery .gallery-img img {
@@ -188,7 +173,6 @@ footer {
   background-size: cover;
   background-attachment: fixed;
   color: #eee;
-  margin: 1%;
 }
 @media (max-width: 560px) {
   #section-services {
@@ -202,7 +186,7 @@ footer {
   background-size: cover;
   background-image: url(./images/mmmmm.jpg);
   color: #eee;
-  margin: 1%;
+
   background-attachment: fixed;
 }
 @media (max-width: 560px) {
@@ -217,7 +201,6 @@ footer {
   background-image: url(./images/mm.jpg);
   background-attachment: fixed;
   color: black;
-  margin: 1%;
 }
 @media (max-width: 560px) {
   #section-prices {
@@ -225,13 +208,8 @@ footer {
   }
 }
 #section-about {
-  /*background: url(./images/fff.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  background-attachment: fixed;*/
   color: #eee;
-  margin: 1%;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
