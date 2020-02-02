@@ -29,6 +29,9 @@ body {
   color: #fff !important;
   text-shadow: 1px 1px 1px #000;
 }
+nav h3 {
+  font-family: "Lobster", cursive;
+}
 h2 {
   font-family: "Lobster", cursive;
 }
