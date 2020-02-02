@@ -701,11 +701,12 @@ ul li i:after {
   line-height: 24px;
   font-weight: 600;
   text-transform: uppercase;
+  color: #000;
 }
 .ui-95 .ui-item h4 {
   font-size: 13px;
   line-height: 23px;
-  color: #999;
+  color: gray;
   font-weight: 400;
 }
 .ui-95 .ui-item .fclick {
