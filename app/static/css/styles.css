@@ -751,6 +751,9 @@ ul li i:after {
   color: #eee;
   margin: 1%;
 }
+#mi h2 {
+  color: #000;
+}
 @media (max-width: 560px) {
   #mi {
     background-attachment: local;
