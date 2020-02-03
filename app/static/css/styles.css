@@ -30,10 +30,10 @@ h5 {
 }
 .nav-item {
   font-size: 19px;
-  color: #000;
+  color: black;
 }
 .nav-link {
-  color: #000;
+  color: black;
 }
 .nav-item:hover {
   opacity: 0.6;
