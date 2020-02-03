@@ -141,6 +141,7 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
+  font-family: "Lobster", cursive;
 }
 
 #section-services .service-card .card-body {
@@ -232,6 +233,7 @@ body {
   background-image: url(./images/mi.jpg);
   background-attachment: fixed;
   color: black;
+  font-family: "Lobster", cursive;
 }
 @media (max-width: 960px) {
   #section-team {
