@@ -29,7 +29,8 @@ h5 {
   text-decoration: none;
 }
 .nav-item {
-  font-size: 26px;
+  font-size: 19px;
+  color: #000;
 }
 .nav-item:hover {
   opacity: 0.6;
