@@ -34,6 +34,7 @@ h5 {
 }
 .nav-link {
   color: black;
+  font-weight: 300;
 }
 .nav-item:hover {
   opacity: 0.6;
