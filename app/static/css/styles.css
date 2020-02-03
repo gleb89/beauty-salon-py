@@ -6,28 +6,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-}
-
-/* scrollSpy */
-body {
   position: relative;
-}
-/* END scrollSpy */
-
-#header {
-  background-color: white;
-}
-
-#header__content h1 {
-  font-family: "Carter One", cursive;
-  font-size: 70px;
-  color: #fff !important;
-  text-shadow: 2px 2px 2px #000;
-}
-
-#header__content h3 {
-  color: #fff !important;
-  text-shadow: 1px 1px 1px #000;
 }
 nav h3 {
   font-family: "Lobster", cursive;
@@ -35,84 +14,27 @@ nav h3 {
 h2 {
   font-family: "Lobster", cursive;
 }
-.onas {
-  margin-top: 70px;
-  opacity: 0.5;
-}
-section {
-}
-.card-body {
-  height: 150px;
+h5 {
   color: #000;
-  background-color: transparent;
-}
-.soc {
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
 }
 
+.btn {
+  color: black;
+  background-color: gold;
+}
 #main-nav {
   background: white;
 }
-
-#main-nav #contacts a {
-  color: #eee;
-  font-family: "Carter One", cursive;
-}
-
-@media (max-width: 1250px) {
-  #header__content {
-    background-size: cover;
-  }
-}
-
-/* Main navigation */
-
-#main-nav #contacts a {
-  color: #444;
-}
-
-@media (max-width: 992px) {
-  .nav-link {
-    padding: 0.5rem 1rem !important;
-  }
-}
-
-#main-nav .navbar-nav .active > .nav-link,
-#main-nav .navbar-nav .nav-link.active,
-#main-nav .navbar-nav .nav-link.show,
-#main-nav .navbar-nav .show > .nav-link {
-  color: white;
-}
-
-@media (min-width: 992px) {
-  #main-nav .nav-pills .nav-link.active,
-  #main-nav .nav-pills .show > .nav-link {
-    background-color: #333;
-    border-radius: 0;
-  }
-}
-@media (max-width: 992px) {
-  #main-nav .nav-pills .nav-link.active,
-  #main-nav .nav-pills .show > .nav-link {
-    background-color: #333;
-  }
-}
-@media (max-width: 1250px) {
-  #header__content {
-    background-size: cover;
-  }
-}
-
 #main-nav #contacts a:hover {
   text-decoration: none;
 }
-/* END Main navigation */
 
-#footer {
-  background-color: #eee;
+#main-nav #contacts a {
+  color: #000;
+  font-family: "Carter One", cursive;
 }
-
+#main-nav #contacts a {
+}
 /* Sections */
 .section-common {
   padding-top: 80px;
@@ -127,16 +49,8 @@ section {
   font-size: 2.7em;
   margin-bottom: 30px;
 }
+/*Header*/
 
-/* END Sections */
-
-#section-gallery .gallery-img img {
-  transition: all ease-in-out 0.3s;
-}
-
-#section-gallery .gallery-img img:hover {
-  opacity: 0.6;
-}
 #header__content {
   background-color: white;
   background-repeat: no-repeat;
@@ -150,65 +64,18 @@ section {
   display: flex;
   align-items: center;
 }
-@media (max-width: 560px) {
-  #header__content {
-    background-attachment: local;
-    min-height: 90vh;
-  }
-}
-h5 {
-  color: #000;
-}
-footer {
-  background-color: rgb(5, 148, 153);
-  color: #eee;
-}
-.btn {
-  color: white;
-  background-color: gold;
+#header__content h1 {
+  font-family: "Carter One", cursive;
+  font-size: 70px;
+  color: #fff !important;
+  text-shadow: 2px 2px 2px #000;
 }
 
-#section-services {
-  background-image: url(./images/serv.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  background-attachment: fixed;
-  color: #eee;
+#header__content h3 {
+  color: #fff !important;
+  text-shadow: 1px 1px 1px #000;
 }
-@media (max-width: 560px) {
-  #section-services {
-    background-attachment: local;
-  }
-}
-
-#section-gallery {
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  background-image: url(./images/mmmmm.jpg);
-  color: #eee;
-
-  background-attachment: fixed;
-}
-@media (max-width: 560px) {
-  #section-gallery {
-    background-attachment: local;
-  }
-}
-#section-prices {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url(./images/mm.jpg);
-  background-attachment: fixed;
-  color: black;
-}
-@media (max-width: 560px) {
-  #section-prices {
-    background-attachment: local;
-  }
-}
+/*about*/
 #section-about {
   color: #eee;
 
@@ -218,54 +85,52 @@ footer {
   background-image: url(./images/fff.jpg);
   background-attachment: fixed;
 }
-@media (max-width: 560px) {
-  #section-about {
-    background-attachment: local;
-  }
+.onas {
+  margin-top: 70px;
+  opacity: 0.5;
 }
-.gotopbtn {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  background: white;
-  bottom: 40px;
-  right: 22px;
-  text-decoration: none;
-  text-align: center;
-  line-height: 50px;
-  color: #333;
-  font-size: 22px;
-  opacity: 0.75;
+/*services*/
+#section-services {
+  background-image: url(./images/serv.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #eee;
 }
-.fa-instagram:before {
-  content: "\f16d";
-  font-size: 80px;
-  color: white;
+.card-body {
+  height: 150px;
+  color: #000;
+  background-color: transparent;
 }
-.soc .fa-instagram:before {
-  color: #8a3ab9;
-  font-size: 50px;
+/*  gallery */
+#section-gallery {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-image: url(./images/mmmmm.jpg);
+  color: #eee;
+
+  background-attachment: fixed;
 }
-.fa-whatsapp:before {
-  content: "\f232";
-  font-size: 50px;
-  color: green;
+
+#section-gallery .gallery-img img {
+  transition: all ease-in-out 0.3s;
 }
-.fa-whatsapp:hover {
+
+#section-gallery .gallery-img img:hover {
   opacity: 0.6;
-  transform: scale(1.2);
 }
-.fa-instagram:hover {
-  opacity: 0.6;
-  transform: scale(1.2);
+/*prices*/
+#section-prices {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./images/mm.jpg);
+  background-attachment: fixed;
+  color: black;
 }
-.soc {
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
-}
-.map {
-  max-width: 600px;
-}
+/*accordion prices*/
 #accordion {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -366,61 +231,13 @@ ul li i:after {
     transform: rotateX(0deg);
   }
 }
-@media (max-width: 770px) {
-  .soc {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-  }
-}
-@media (max-width: 770px) {
-  .in {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 10px;
-  }
-}
-@media (max-width: 770px) {
-  .wats {
-    display: flex;
-    justify-content: flex-start;
-  }
-}
-.ivi {
-  text-align: center;
-}
+/*Footer*/
 
-@media (max-width: 560px) {
-  .font {
-    font-size: 26px;
-    font-weight: 700;
-  }
+footer {
+  background-color: gray;
+  color: #eee;
 }
-@media (max-width: 560px) {
-  .pont {
-    font-size: 26px;
-    font-weight: 700;
-
-    text-align: center;
-  }
-}
-@media (max-width: 560px) {
-  .fontr {
-    font-size: 20px;
-    font-weight: 700;
-
-    text-align: center;
-  }
-}
-@media (max-width: 560px) {
-  .ponts {
-    font-size: 26px;
-    font-weight: 700;
-    text-align: center;
-  }
-}
-
-/*кнопка звонка*/
+/*bt-call*/
 
 .callback-bt {
   background: #38a3fd;
@@ -653,12 +470,7 @@ ul li i:after {
     -webkit-transform: rotateZ(0deg);
   }
 }
-/* конец кнопки звонка */
-
-.kal {
-  display: grid;
-  justify-content: center;
-}
+/*mi*/
 .ui-95 {
   margin: 80px 0px;
 }
@@ -734,6 +546,149 @@ ul li i:after {
 #mi h2 {
   color: #000;
 }
+/*contacts*/
+.kal {
+  display: grid;
+  justify-content: center;
+}
+.soc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+.fa-instagram:before {
+  content: "\f16d";
+  font-size: 80px;
+  color: white;
+}
+.soc .fa-instagram:before {
+  color: #8a3ab9;
+  font-size: 50px;
+}
+.fa-whatsapp:before {
+  content: "\f232";
+  font-size: 50px;
+  color: green;
+}
+.fa-whatsapp:hover {
+  opacity: 0.6;
+  transform: scale(1.2);
+}
+.fa-instagram:hover {
+  opacity: 0.6;
+  transform: scale(1.2);
+}
+.map {
+  max-width: 600px;
+}
+/*@media*/
+@media (max-width: 1250px) {
+  #header__content {
+    background-size: cover;
+  }
+}
+@media (max-width: 560px) {
+  .font {
+    font-size: 26px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 560px) {
+  .pont {
+    font-size: 26px;
+    font-weight: 700;
+
+    text-align: center;
+  }
+}
+@media (max-width: 560px) {
+  .fontr {
+    font-size: 20px;
+    font-weight: 700;
+
+    text-align: center;
+  }
+}
+@media (max-width: 560px) {
+  .ponts {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-link {
+    padding: 0.5rem 1rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  #main-nav .nav-pills .nav-link.active,
+  #main-nav .nav-pills .show > .nav-link {
+    background-color: #333;
+  }
+}
+@media (max-width: 1250px) {
+  #header__content {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 560px) {
+  #header__content {
+    background-attachment: local;
+    min-height: 90vh;
+  }
+}
+
+@media (max-width: 560px) {
+  #section-services {
+    background-attachment: local;
+  }
+}
+
+@media (max-width: 560px) {
+  #section-gallery {
+    background-attachment: local;
+  }
+}
+
+@media (max-width: 560px) {
+  #section-prices {
+    background-attachment: local;
+  }
+}
+
+@media (max-width: 560px) {
+  #section-about {
+    background-attachment: local;
+  }
+}
+
+@media (max-width: 770px) {
+  .soc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+}
+@media (max-width: 770px) {
+  .in {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 770px) {
+  .wats {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+.ivi {
+  text-align: center;
+}
+
 @media (max-width: 560px) {
   #mi {
     background-attachment: local;
