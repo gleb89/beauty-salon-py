@@ -109,7 +109,11 @@ body {
   background-attachment: fixed;
   color: #eee;
 }
-
+@media (max-width: 960px) {
+  #section-about {
+    background-attachment: local;
+  }
+}
 #section-about h3 {
   font-family: "Lobster", cursive;
   font-size: 2.5rem;
@@ -128,7 +132,11 @@ body {
   background-attachment: fixed;
   color: #eee;
 }
-
+@media (max-width: 960px) {
+  #section-services {
+    background-attachment: local;
+  }
+}
 #section-services .service-card h3.card-title {
   font-size: 1.6rem;
   font-weight: 700;
@@ -150,7 +158,11 @@ body {
   background-attachment: fixed;
   color: #eee;
 }
-
+@media (max-width: 960px) {
+  #section-gallery {
+    background-attachment: local;
+  }
+}
 #section-gallery .gallery-img img {
   transition: all ease-in-out 0.3s;
 }
@@ -179,7 +191,11 @@ body {
   background-attachment: fixed;
   color: black;
 }
-
+@media (max-width: 960px) {
+  #section-prices {
+    background-attachment: local;
+  }
+}
 #section-prices .accordion .card-header h3 {
   cursor: pointer;
   font-family: "Lobster", cursive;
@@ -216,7 +232,11 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-
+@media (max-width: 960px) {
+  #section-team {
+    background-attachment: local;
+  }
+}
 #section-team .team-card {
   text-align: center;
   margin-bottom: 40px;
