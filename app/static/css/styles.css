@@ -103,6 +103,9 @@ h5 {
   color: #000;
   background-color: transparent;
 }
+.ivi {
+  text-align: center;
+}
 /*  gallery */
 #section-gallery {
   background-repeat: no-repeat;
@@ -684,9 +687,6 @@ footer {
     display: flex;
     justify-content: flex-start;
   }
-}
-.ivi {
-  text-align: center;
 }
 
 @media (max-width: 560px) {
