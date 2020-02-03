@@ -603,13 +603,48 @@ footer {
     background-size: cover;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 1250px) {
+  #header__content {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 992px) {
+  #header__content {
+    background-attachment: local;
+    min-height: 90vh;
+  }
+}
+
+@media (max-width: 992px) {
+  #section-services {
+    background-attachment: local;
+  }
+}
+
+@media (max-width: 992px) {
+  #section-gallery {
+    background-attachment: local;
+  }
+}
+
+@media (max-width: 992px) {
+  #section-prices {
+    background-attachment: local;
+  }
+}
+@media (max-width: 992px) {
+  #section-about {
+    background-attachment: local;
+  }
+}
+@media (max-width: 992px) {
   .font {
     font-size: 26px;
     font-weight: 700;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 992px) {
   .pont {
     font-size: 26px;
     font-weight: 700;
@@ -617,7 +652,7 @@ footer {
     text-align: center;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 992px) {
   .fontr {
     font-size: 20px;
     font-weight: 700;
@@ -625,7 +660,7 @@ footer {
     text-align: center;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 992px) {
   .ponts {
     font-size: 26px;
     font-weight: 700;
@@ -643,68 +678,5 @@ footer {
   #main-nav .nav-pills .nav-link.active,
   #main-nav .nav-pills .show > .nav-link {
     background-color: #333;
-  }
-}
-@media (max-width: 1250px) {
-  #header__content {
-    background-size: cover;
-  }
-}
-
-@media (max-width: 560px) {
-  #header__content {
-    background-attachment: local;
-    min-height: 90vh;
-  }
-}
-
-@media (max-width: 560px) {
-  #section-services {
-    background-attachment: local;
-  }
-}
-
-@media (max-width: 560px) {
-  #section-gallery {
-    background-attachment: local;
-  }
-}
-
-@media (max-width: 560px) {
-  #section-prices {
-    background-attachment: local;
-  }
-}
-
-@media (max-width: 560px) {
-  #section-about {
-    background-attachment: local;
-  }
-}
-
-@media (max-width: 770px) {
-  .soc {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-  }
-}
-@media (max-width: 770px) {
-  .in {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 10px;
-  }
-}
-@media (max-width: 770px) {
-  .wats {
-    display: flex;
-    justify-content: flex-start;
-  }
-}
-
-@media (max-width: 560px) {
-  #mi {
-    background-attachment: local;
   }
 }
