@@ -235,6 +235,7 @@ body {
 @media (max-width: 960px) {
   #section-team {
     background-attachment: local;
+    background-image: url("images/mi.jpg");
   }
 }
 @media (max-width: 960px) {
