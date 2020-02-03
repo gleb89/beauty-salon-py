@@ -237,6 +237,11 @@ body {
     background-attachment: local;
   }
 }
+@media (max-width: 960px) {
+  .media {
+    display: none;
+  }
+}
 #section-team .team-card {
   text-align: center;
   margin-bottom: 40px;
