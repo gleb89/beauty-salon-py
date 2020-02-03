@@ -147,7 +147,7 @@ body {
 #section-services .service-card .card-body {
   height: 150px;
   color: #000;
-  background-color: transparent;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 /*  gallery */
