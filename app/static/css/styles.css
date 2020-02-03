@@ -226,11 +226,12 @@ body {
 }
 
 #section-team {
-  background-image: url("images/mi.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
   background-size: cover;
+  background-image: url(./images/mi.jpg);
   background-attachment: fixed;
+  color: black;
 }
 @media (max-width: 960px) {
   #section-team {
