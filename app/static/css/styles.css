@@ -236,12 +236,6 @@ ul li i:after {
     transform: rotateX(0deg);
   }
 }
-/*Footer*/
-
-footer {
-  background-color: gray;
-  color: white;
-}
 
 /*mi*/
 .ui-95 {
@@ -321,7 +315,7 @@ footer {
 }
 
 /*call*/
-.cal {
+.call {
   display: grid;
   justify-content: center;
 }
@@ -486,6 +480,11 @@ footer {
   opacity: 0.75;
 }
 
+/*Footer*/
+footer {
+  background-color: gray;
+  color: white;
+}
 /*@media*/
 @media (max-width: 1250px) {
   #header__content {
