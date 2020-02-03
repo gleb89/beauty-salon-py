@@ -28,7 +28,10 @@ h5 {
 #main-nav #contacts a:hover {
   text-decoration: none;
 }
-
+.nav-item:hover {
+  opacity: 0.6;
+  transform: scale(1.2);
+}
 #main-nav #contacts a {
   color: #000;
   font-family: "Carter One", cursive;
