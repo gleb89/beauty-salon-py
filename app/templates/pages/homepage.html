@@ -1,9 +1,10 @@
 {% extends 'base.html' %} {% block content %}
 <section id="section-about" class="section-common ">
-  <h2 class="featurette-heading text-center">О нас</h2>
   <div class="container">
     <div class="row featurette">
-      <div class="col-md-6 order-md-2 wow zoomIn " data-wow-delay="0.1s">
+      <div class="col-md-6 order-md-2">
+        <h2 class="featurette-heading text-center">Прайс</h2>
+        <div class="container_about wow zoomIn ">
         
 
         <div class="container">
@@ -32,13 +33,14 @@
         <p class="font text-center">Добро пожаловать...</p>
 
       </div>
-      <div class="col-md-6 wow zoomIn" data-wow-delay="0.1s">
-        <div class="img  ">
-          <img class="imgn img-fluid onas" width="500" height="400"
-            src="{{ url_for('static', filename='css/images/on.jpg') }}" alt="">
+      <div class="col-md-6 ">
+        <div class="img   ">
+          <img class="img-fluid yslugi" width="500" height="400"
+            src="{{ url_for('static', filename='css/images/pr.jpg') }}" alt="">
         </div>
         <title>Placeholder</title>
         <rect fill="#eee" width="100%" height="100%" />
+
       </div>
     </div>
   </div>
