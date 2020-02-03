@@ -32,6 +32,9 @@ h5 {
   font-size: 19px;
   color: #000;
 }
+.nav-link {
+  color: #000;
+}
 .nav-item:hover {
   opacity: 0.6;
   transform: scale(1.2);
