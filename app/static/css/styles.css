@@ -118,6 +118,9 @@ h5 {
 
   background-attachment: fixed;
 }
+.inst {
+  font-family: "Lobster", cursive;
+}
 
 #section-gallery .gallery-img img {
   transition: all ease-in-out 0.3s;
