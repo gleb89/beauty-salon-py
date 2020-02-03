@@ -16,8 +16,9 @@ def template_functions():
 @app.context_processor
 def site_settings():
     return dict(
-        site_title='Салон красоты «Beauty Room» в городе Камышин',
+        site_title='Студия красоты «Beauty Room» в городе Камышин',
         site_description='Услуги косметолога, визажиста, парикмахера, стилиста в г. Камышин',
+        site_short_description='Студия красоты в г. Камышин',
         site_phone='+79370969944',
         site_phone_formated='+7 937 096-99-44',
         site_email='beautyroom37@mail.ru',

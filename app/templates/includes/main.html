@@ -1,65 +1,37 @@
-<nav id="main-nav" class="navbar fixed-top navbar-expand-lg navbar-light  ">
-  <a class="navbar-brand" href="/">
-    <h3>"Beauty Room"</h3>
-  </a>
-  <button
-    class="navbar-toggler "
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-  >
-    <span class=" navbar-toggler-icon "></span>
-  </button>
+<nav id="main-nav" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand mb-0 h1" href="/">Beauty Room</a>
+    <span class="navbar-text d-none d-sm-inline-block d-lg-none d-xl-inline-block">{{ site_short_description }}</span>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto ml-5">
-      <li class="nav-item ">
-        <a class="nav-link " href="#section-about">
-          О нас
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#section-services">
-          Услуги
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#section-gallery">
-          Фотогалерея
-        </a>
-      </li>
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+        <span class=" navbar-toggler-icon "></span>
+    </button>
 
-      <li class="nav-item">
-        <a class="nav-link" href="#section-prices">
-          Прайс
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#mi">
-          Мастера
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#section-contacts">
-          Контакты
-        </a>
-      </li>
-    </ul>
-    <div>
-      <button
-        type="button"
-        class="btn  mr-3"
-        data-toggle="modal"
-        data-target="#exampleModal"
-      >
-        Записаться
-      </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ml-lg-5">
+            <li class="nav-item ">
+                <a class="nav-link " href="#section-about">О нас</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section-services">Услуги</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section-gallery">Фотогалерея</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section-prices">Цены</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section-team">Наши мастера</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section-contacts">Контакты</a>
+            </li>
+        </ul>
+        <div id="callback">
+            <button type="button" class="btn btn-warning mr-3" data-toggle="modal" data-target="#callbackModal">Записаться</button>
+        </div>
+        <div id="contacts" class="my-2">
+            <i class="fas fa-phone-alt"></i> <a href="tel:{{ site_phone }}" title="Позвонить">{{ site_phone_formated }} </i></a>
+        </div>
     </div>
-    <div id="contacts" class="my-2">
-      <a href="tel:{{ site_phone }}" title="Позвонить"
-        >{{ site_phone_formated }} </i
-      ></a>
-    </div>
-  </div>
 </nav>

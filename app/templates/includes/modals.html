@@ -1,0 +1,56 @@
+<div class="modal fade" id="callbackModal" tabindex="-1" role="dialog" aria-labelledby="callbackModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="h5 modal-title" id="callbackModalLabel">Обратный звонок</div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="{{ url_for('homepage') }}" novalidate autocomplete="off" method="POST">
+                {{ form_callback.csrf_token }}
+                <div class="modal-body">
+                    <div class="form-group">
+                        {% if form_callback.user_name.flags.required %}
+                            {{ form_callback.user_name.label }} <span class="text-danger">*</span>
+                        {% else %}
+                            {{ form_callback.user_name.label }}
+                        {% endif %}
+
+                        {% if form_callback.user_name.errors %}
+                            {{ form_callback.user_name(class="form-control is-invalid", placeholder="Укажите ваше имя") }}
+                            <div class="invalid-feedback">
+                                {% for error in form_callback.user_name.errors %}
+                                    {{ error }}<br />
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form_callback.user_name(class="form-control", placeholder="Укажите ваше имя") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {% if form_callback.user_phone.flags.required %}
+                            {{ form_callback.user_phone.label }} <span class="text-danger">*</span>
+                        {% else %}
+                            {{ form_callback.user_phone.label }}
+                        {% endif %}
+                        {% if form_callback.user_phone.errors %}
+                            {{ form_callback.user_phone(class="form-control is-invalid", placeholder="+7 000 000-00-00") }}
+                            <div class="invalid-feedback">
+                                {% for error in form_callback.user_phone.errors %}
+                                    {{ error }}<br />
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form_callback.user_phone(class="form-control", placeholder="+7 000 000-00-00") }}
+                        {% endif %}
+                        <small id="user-phone-help" class="form-text text-muted">Укажите номер вашего телефона (в формате +7 000 000-00-00) для связи</small>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

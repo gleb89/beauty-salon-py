@@ -28,7 +28,6 @@ def process_callback_form(form_callback):
 
     # notification for admin
     msg = Message(subject='Callback request',
-
                   recipients=["beautyroom37@mail.ru"],
                   body=f'Поступила заявка на обратный звонок от {user_name}, на номер телефона: {user_phone}',
                   # html=f'<h2>Поступила заявка на обратный звонок по номеру: {user_phone}</h2><img src="https://pixlr.com/photo/image-design-11-1-pw.jpg" alt="">',

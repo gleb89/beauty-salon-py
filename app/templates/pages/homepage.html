@@ -1,379 +1,340 @@
-{% extends 'base.html' %} {% block content %}
-<section id="section-about" class="section-common ">
-  <h2 class="featurette-heading text-center">О нас</h2>
-  <div class="container">
-    <div class="row featurette">
-      <div class="col-md-6 order-md-2 wow zoomIn " data-wow-delay="0.1s">
-        
+{% extends 'base.html' %}
 
-        <div class="container">
-          <h3 class="text-center">Миссия</h3>
-          Миссия салона - предоставить клиентам высокий сервис обслуживания и широкий спектр услуг по самым
-          демократичным ценам.</p>
-        </div>
-        <div class="container ">
-          <h3 class="text-center">Политика</h3>
-          <p class="text-center"> Мы всегда готовы предложить своим любимым клиентам индивидуальный подход . </p>
-        </div>
+{% block content %}
+    <main>
+        <section id="section-about" class="section-common">
+            <h2 class="section-header">О нас</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-4 mb-lg-0 wow zoomIn" data-wow-delay="0.1s">
+                        <img class="img-fluid" src="{{ url_for('static', filename='css/images/bbb.jpg') }}" alt="">
+                    </div>
+                    <div class="col-12 col-lg-6 text-center text-lg-left wow zoomIn" data-wow-delay="0.1s">
+                        <div class="about-card mb-3">
+                            <h3>Миссия</h3>
+                            <p>Миссия салона - предоставить клиентам высокий сервис обслуживания и широкий спектр услуг по самым демократичным ценам.</p>
+                        </div>
+                        <div class="about-card mb-3">
+                            <h3>Политика</h3>
+                            <p>Мы всегда готовы предложить своим любимым клиентам индивидуальный подход.</p>
+                        </div>
+                        <div class="about-card mb-3">
+                            <h3>Этикет</h3>
+                            <p>Мы всегда рады приветствовать клиентов в нашей студии красоты. Мы с благодарностью относимся к выбору и мнению клиентов о работе студии, Гордимся доверием наших клиентов!</p>
+                        </div>
+                        <div class="about-card">
+                            <h3>Философия</h3>
+                            <p>Видение и внутреннее правило нашей компании заключается в том что «Возможно - Все!»</p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="container">
-          <h3 class="text-center"> Этикет</h3>
-          <p class="text-center"> Мы всегда рады приветствовать клиентов в нашей студии красоты. Мы с благодарностью относимся к выбору и
-            мнению клиентов о работе студии, Гордимся доверием наших клиентов!</p>
-        </div>
-        <div class="container ">
-          <h3 class="text-center">Философия</h3>
-          <p class="text-center"> Видение и внутреннее правило нашей компании заключается в том что «Возможно - Все!»</p>
-        </div>
-        <p class="text-center">Добро пожаловать...</p>
-
-      </div>
-      <div class="col-md-6 wow zoomIn" data-wow-delay="0.1s">
-        <div class="img  ">
-          <img class="img-fluid onas" width="500" height="400"
-            src="{{ url_for('static', filename='css/images/bbb.jpg') }}" alt="">
-        </div>
-        <title>Placeholder</title>
-        <rect fill="#eee" width="100%" height="100%" />
-
-      </div>
-    </div>
-  </div>
-
-  
-</section>
-
-<section id="section-services" class="section-common">
-  <div class="section-common__tit container ">
-    <h2 class="ivi">Услуги</h2>
-  </div>
-  <div class="section-common__content container ">
-
-    <div class="row ">
-      {% for service in services %}
-      {% if service.show %}
-      <div class="col-md-4 ">
-
-        <div class="card  mb-4 shadow-sm text-center wow zoomIn" data-wow-delay="0.1s">
-
-          {% if service.image %}
-          <img class="img-thumbnail gap  " src="{{ url_for('static', filename=service.image) }}" alt="">
-          {% else %}
-          <img src="https://via.placeholder.com/256x170" class="card-img-top" alt="">
-          {% endif %}
-          <div class="card-body featurette-heading text-center">
-            <h5 class="card-title text-uppercase font-weight-bold">{{ service.title }}</h5>
-            <p class="card-text">{{ service.descr }}</p>
-
-          </div>
-        </div>
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-</section>
-
-{% if gallery %}
-<section id="section-gallery" class="section-common ">
-  <div class="section-common__title container ">
-    <h2>Фотогалерея</h2>
-  </div>
-  <div class="section-common__content container ">
-    <div class="row">
-
-      {% for gal in gallery %}
-      {% if gal.show %}
-      {% set image_base_path = 'images/gallery/' %}
-      {% set image_path = image_base_path ~ gal.image %}
-      {% set image_thumb_path = image_base_path ~ 'thumbnails/thumb_' ~ gal.image %}
-      <div class="gallery-img col-12 col-sm-6 col-md-4 col-xl-3 mb-4 wow fadeInDown" data-wow-delay="0.5s">
-        <a href="{{ url_for('static', filename=image_path) }}" data-fancybox="gallery" {% if gal.title %}
-          data-caption="{{ gal.title }}" {% endif %}>
-          <img class="img-thumbnail" src="{{ url_for('static', filename=image_thumb_path) }}"
-            alt="{% if gal.title %}{{ gal.title }}{% endif %}">
-        </a>
-      </div>
-      {% endif %}
-      {% endfor %}
-      <div class="container inst text-center">
-        <h4>смотреть больше фото</h4>
-        <a class="" href="https://www.instagram.com/beauty_room_kamyshin/" target="_blank"> <i
-            class="fab fa-instagram"></i>
-        </a>
-      </div>
-     
-      
-
-    </div>
-
-  </div>
-  </div>
-
-</section>
-{% endif %}
-
-
-
-
-
-<section id="section-prices" class="section-common ">
-  <div class="container">
-    <div class="row featurette">
-      <div class="col-md-6 order-md-2">
-        <h2 class="featurette-heading text-center">Прайс</h2>
-        <div class="container_prices wow zoomIn ">
-          <ul>
-            <li>
-              <input type="checkbox" checked>
-              <i></i>
-              <h2>Маникюр</h2>
-              <p class="fontr text-center" >
-                Ремонт ногтя <br>
-                50р<br>
-                Дизайн(геометрия,вензеля,рисунок) <br>
-                25р<br>
-                Френч <br>
-                100р<br>
-                Лунки/втирка на все ногти <br>
-                150р<br>
-                Стразы <br>
-                25р.<br>
-                Наращивание ногтей <br>
-                1200р.<br>
-                Корекция/укрепление твердым гелем <br>
-                800р.<br>
-                Корекция/укрепление гель-лаком <br>
-                700р.</pclass="text-center"><br>
-            </li>
-            <li>
-              <input type="checkbox" checked>
-              <i></i>
-              <h2>Парикмахерские услуги</h2>
-              <p class="fontr text-center">Выпрямление и питание волос (Кератин) <br>
-                2200р.<br>
-                Стрижка модельная <br>
-                300р<br>
-                Стрижка креативная<br>
-                400р<br>
-                Стрижка на волосы средней длины <br>
-                350р.><br>
-                Стрижка на волосы средней длины<br>
-                450р.<br>
-
-                Стрижка модельная <br>
-                300р.<br>
-                Стрижка двумя насадками<br>
-                250р.<br>
-                Стрижка одной насадкой <br>
-                200р.<br>
-                Стрижка "наголо"<br>
-                100р.<br></p>
-            </li>
-            <li>
-              <input type="checkbox" checked>
-              <i></i>
-              <h2>Эстетическая косметология</h2>
-              <p class="fontr text-center">
-                Чистка лица<br>
-                1300р.<br>
-                Мультивитаминный уход <br>
-                800р.<br>
-                Детокс кожи лица <br>
-                1000р.<br>
-                Альгинатная маска <br>
-                1000р.<br>
-              </p>
-            </li>
-            <li>
-              <input type="checkbox" checked>
-              <i></i>
-              <h2>Макияж</h2>
-              <p class="fontr text-center">
-                Макияж дневной <br>
-                1300р.<br>
-                Макияж вечерний <br>
-                1500р.<br>
-                Макияж свадебный/выпускной<br>
-                1700р.<br>
-                Макияж пробный <br>
-                1200р.<br>
-              </p>
-            </li>
-            <li>
-              <input type="checkbox" checked>
-              <i></i>
-              <h2>Депиляция</h2>
-              <p class="fontr text-center">
-                Подмышечные впадины <br>
-                300р.<br>
-                Класическое бикини <br>
-                450р.<br>
-                Глубокое бикини <br>
-                700р.<br>
-                Депиляция ног <br>
-                590р.<br>
-                Депиляция лица <br>
-                100р.<br>
-                Депиляция рук <br>
-                350р.<br>
-                Парафинотерапия руг/ног <br>
-                250р.<br>
-              </p>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-      <div class="col-md-6 ">
-        <div class="img   ">
-          <img class="img-fluid yslugi" width="500" height="400"
-            src="{{ url_for('static', filename='css/images/pr.jpg') }}" alt="">
-        </div>
-        <title>Placeholder</title>
-        <rect fill="#eee" width="100%" height="100%" />
-
-      </div>
-    </div>
-    </div>
-</section>
-<section id="mi">
-  <h2 class="text-center">Наши мастера</h2>
-  <div class="ui-95">
-		
-    <div class="container ">
-    
-      <div class="row">
-        <div class="col-md-4 col-sm-6">
-          <div class="ui-item">
-            <img src="{{ url_for('static', filename='css/images/elena.jpg') }}" class="img-responsive" alt=""/>
-            <h3>Елена <a href="https://wa.me/79275328249/" target="_blank"><i class="fab fa-whatsapp"></i></a></h3>
-            
-            <h4>Парикмахер</h4>
-            
-            
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="ui-item">
-            <img src="{{ url_for('static', filename='css/images/daha.jpg') }}" class="img-responsive"  alt=""/>
-            <h3>Дарья <a href="https://wa.me/79370870538/" target="_blank"><i class="fab fa-whatsapp"></i></a></h3>
-            
-            <h4>Парикмахер</h4>
-            
-            
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="ui-item">
-            <img src="{{ url_for('static', filename='css/images/mari.jpg') }}" class="img-responsive" alt=""/>
-            <h3>Марина <a href="https://wa.me/79377233024/" target="_blank"><i class="fab fa-whatsapp"></i></a></h3>
-            
-            <h4>Парикмахер,Барбер</h4>
-            
-            
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="ui-item">
-            <img src="{{ url_for('static', filename='css/images/vika.jpg') }}" class="img-responsive" alt=""/>
-            <h3>Виктория <a href="https://wa.me/79275083260/" target="_blank"><i class="fab fa-whatsapp"></i></a></h3>
-            
-            <h4>Мастер маникюра</h4>
-            
-            
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="ui-item">
-            <img src="{{ url_for('static', filename='css/images/eka.jpg') }}" class="img-responsive" alt=""/>
-            <h3>Екатерина <a href="https://wa.me/79370969944/" target="_blank"><i class="fab fa-whatsapp"></i></a></h3>
-            
-            <h4>Визажист</h4>
-            
-            
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="ui-item">
-            <img src="{{ url_for('static', filename='css/images/maha.jpg') }}" class="img-responsive" alt=""/>
-            <h3>Мария <a href="https://wa.me/79997448789/" target="_blank"><i class="fab fa-whatsapp"></i></a></h3>
-            
-            <h4>Мастер шугаринга</h4>
-            
-          
-          </div>
-        </div>
-      </div>
-    
-    </div>
-  
-  </div>
-  
-</section>
-
-
-<section class="call">
-  <div type="button round" class="callback-bt " data-toggle="modal" data-target="#exampleModal">
-    <div class="text-call ">
-      <i class="fa fa-phone"></i>
-      <span>Обратный<br>звонок</span>
-    </div>
-  </div>
-</section>
-<section id="section-contacts" class="section-common">
- 
-  <div class="section-common__title container">
-    <h2>Контакты</h2>
-  </div>
-  <div class="section-common__content container">
-    <div class="row">
-      <div class="col-12 col-md-4 mb-4 text-center text-md-left">
-        <div class="mb-3">
-          <div class="font-weight-bold">Телефон</div>
-          <div>
-            <a href="tel:{{ site_phone }}" title="Позвонить">{{ site_phone_formated }}</a>
-          </div>
-        </div>
-        <div class="mb-3">
-          <div class="font-weight-bold">Email</div>
-          <div>
-            <a href="mailto:{{ site_email }}">{{ site_email }}</a>
-          </div>
-        </div>
-        <div class="mb-3">
-          <div class="font-weight-bold">Мы в соцсетях
-
-          </div>
-          <div class="soc">
-            <div class="in">
-              <a href="https://www.instagram.com/beauty_room_kamyshin/" target="_blank">
-                <i class="fab fa-instagram social "></i>
-              </a>
+                <div class="h2 text-center mt-5 wow zoomIn" data-wow-delay="0.5s">Добро пожаловать!</div>
             </div>
-            <div class="wats">
+        </section>
 
-              <a href="https://wa.me/79370969944/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        {% if services %}
+            <section id="section-services" class="section-common">
+                <h2 class="section-header">Услуги</h2>
+                <div class="container">
+                    <div class="row">
+                        {% for service in services %}
+                            {% if service.show %}
+                                <div class="service-card col-12 col-md-6 col-lg-4 mb-5">
+                                    <div class="card shadow-sm text-center wow zoomIn" data-wow-delay="0.1s">
+                                        {% if service.image %}
+                                            <img class="img-thumbnail gap" src="{{ url_for('static', filename=service.image) }}" alt="{{ service.title }}">
+                                        {% else %}
+                                            <img src="https://via.placeholder.com/256x170" class="card-img-top" alt="">
+                                        {% endif %}
+                                        <div class="card-body featurette-heading text-center">
+                                            <h3 class="card-title">{{ service.title }}</h3>
+                                            <div class="card-text">{{ service.descr }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+        {% endif %}
+    </main>
 
-
+    {% if gallery %}
+        <section id="section-gallery" class="section-common">
+            <h2 class="section-header">Фотогалерея</h2>
+            <div class="container">
+                <div class="row">
+                    {% for gal in gallery %}
+                        {% if gal.show %}
+                            {% set image_base_path = 'images/gallery/' %}
+                            {% set image_path = image_base_path ~ gal.image %}
+                            {% set image_thumb_path = image_base_path ~ 'thumbnails/thumb_' ~ gal.image %}
+                            <div class="gallery-img col-12 col-sm-6 col-lg-4 col-xl-3 mb-4 wow fadeInDown" data-wow-delay="0.5s">
+                                <a href="{{ url_for('static', filename=image_path) }}" data-fancybox="gallery"{% if gal.title %} data-caption="{{ gal.title }}"{% endif %}>
+                                    <img class="img-thumbnail" src="{{ url_for('static', filename=image_thumb_path) }}" alt="{% if gal.title %}{{ gal.title }}{% endif %}">
+                                </a>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="inst text-center">
+                    <div class="h3">Смотреть больше фото</div>
+                    <a href="https://www.instagram.com/beauty_room_kamyshin/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
             </div>
-          </div>
+        </section>
+    {% endif %}
 
+    <section id="section-prices" class="section-common">
+        <h2 class="section-header">Цены</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                    <img style="width: 100%; height: auto;" src="{{ url_for('static', filename='css/images/pr.jpg') }}" alt="">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                {# <!-- <h3 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Маникюр</h3> --> #}
+                                <h3 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Маникюр</h3>
+                            </div>
+                            {# <!-- <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample"> --> #}
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <dl class="row">
+                                        <dt class="col-sm-7">Ремонт ногтя</dt>
+                                        <dd class="col-sm-5 text-center">50 руб</dd>
+
+                                        <dt class="col-sm-7">Дизайн<br>(геометрия, вензеля, рисунок)</dt>
+                                        <dd class="col-sm-5 text-center">25 руб</dd>
+
+                                        <dt class="col-sm-7">Френч</dt>
+                                        <dd class="col-sm-5 text-center">100 руб</dd>
+
+                                        <dt class="col-sm-7">Лунки/втирка на все ногти</dt>
+                                        <dd class="col-sm-5 text-center">150 руб</dd>
+
+                                        <dt class="col-sm-7">Стразы</dt>
+                                        <dd class="col-sm-5 text-center">25 руб</dd>
+
+                                        <dt class="col-sm-7">Наращивание ногтей</dt>
+                                        <dd class="col-sm-5 text-center">1200 руб</dd>
+
+                                        <dt class="col-sm-7">Корекция/укрепление твердым гелем</dt>
+                                        <dd class="col-sm-5 text-center">800 руб</dd>
+
+                                        <dt class="col-sm-7">Корекция/укрепление гель-лаком</dt>
+                                        <dd class="col-sm-5 text-center">700 руб</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h3 class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Парикмахерские услуги</h3>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <dl class="row">
+                                        <dt class="col-sm-7">Выпрямление и питание волос (Кератин)</dt>
+                                        <dd class="col-sm-5 text-center">2200 руб</dd>
+
+                                        <dt class="col-sm-7">Стрижка модельная</dt>
+                                        <dd class="col-sm-5 text-center">300 руб</dd>
+
+                                        <dt class="col-sm-7">Стрижка креативная</dt>
+                                        <dd class="col-sm-5 text-center">400 руб</dd>
+
+                                        <dt class="col-sm-7">Стрижка на волосы средней длины</dt>
+                                        <dd class="col-sm-5 text-center">450 руб</dd>
+
+                                        <dt class="col-sm-7">Стрижка модельная</dt>
+                                        <dd class="col-sm-5 text-center">300 руб</dd>
+
+                                        <dt class="col-sm-7">Стрижка двумя насадками</dt>
+                                        <dd class="col-sm-5 text-center">250 руб</dd>
+
+                                        <dt class="col-sm-7">Стрижка одной насадкой</dt>
+                                        <dd class="col-sm-5 text-center">200 руб</dd>
+
+                                        <dt class="col-sm-7">Стрижка "под ноль"</dt>
+                                        <dd class="col-sm-5 text-center">100 руб</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h3 class="mb-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Эстетическая косметология</h3>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <dl class="row">
+                                        <dt class="col-sm-7">Чистка лица</dt>
+                                        <dd class="col-sm-5 text-center">1300 руб</dd>
+
+                                        <dt class="col-sm-7">Мультивитаминный уход</dt>
+                                        <dd class="col-sm-5 text-center">800 руб</dd>
+
+                                        <dt class="col-sm-7">Детокс кожи лица</dt>
+                                        <dd class="col-sm-5 text-center">1000 руб</dd>
+
+                                        <dt class="col-sm-7">Альгинатная маска</dt>
+                                        <dd class="col-sm-5 text-center">1000 руб</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h3 class="mb-0" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Макияж</h3>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <dl class="row">
+                                        <dt class="col-sm-7">Макияж дневной</dt>
+                                        <dd class="col-sm-5 text-center">1300 руб</dd>
+
+                                        <dt class="col-sm-7">Макияж вечерний</dt>
+                                        <dd class="col-sm-5 text-center">1500 руб</dd>
+
+                                        <dt class="col-sm-7">Макияж свадебный/выпускной</dt>
+                                        <dd class="col-sm-5 text-center">1700 руб</dd>
+
+                                        <dt class="col-sm-7">Макияж пробный</dt>
+                                        <dd class="col-sm-5 text-center">1200 руб</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h3 class="mb-0" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Депиляция</h3>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <dl class="row">
+                                        <dt class="col-sm-7">Подмышечные впадины </dt>
+                                        <dd class="col-sm-5 text-center">300 руб</dd>
+
+                                        <dt class="col-sm-7">Класическое бикини</dt>
+                                        <dd class="col-sm-5 text-center">450 руб</dd>
+
+                                        <dt class="col-sm-7">Глубокое бикини</dt>
+                                        <dd class="col-sm-5 text-center">700 руб</dd>
+
+                                        <dt class="col-sm-7">Депиляция ног</dt>
+                                        <dd class="col-sm-5 text-center">590 руб</dd>
+
+                                        <dt class="col-sm-7">Депиляция лица</dt>
+                                        <dd class="col-sm-5 text-center">100 руб</dd>
+
+                                        <dt class="col-sm-7">Депиляция рук</dt>
+                                        <dd class="col-sm-5 text-center">350 руб</dd>
+
+                                        <dt class="col-sm-7">Парафинотерапия руг/ног</dt>
+                                        <dd class="col-sm-5 text-center">250 руб</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="mb-3">
-          <div class="font-weight-bold">Адрес</div>
-          <address>{{ site_address }}</address>
+    </section>
+
+    <section id="section-team" class="section-common">
+        <h2 class="section-header">Наши мастера</h2>
+        <div class="container">
+            <div class="row">
+                <div class="team-card col-12 col-md-6 col-lg-4">
+                    <img src="{{ url_for('static', filename='css/images/elena.jpg') }}" class="rounded-circle" alt="" />
+                    <div class="team-card__name">
+                        Елена <a href="https://wa.me/79275328249/" title="Позвонить" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="team-card__category">Парикмахер</div>
+                </div>
+                <div class="team-card col-12 col-md-6 col-lg-4">
+                    <img src="{{ url_for('static', filename='css/images/daha.jpg') }}" class="rounded-circle" alt="" />
+                    <div class="team-card__name">
+                        Дарья <a href="https://wa.me/79370870538/" title="Позвонить" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="team-card__category">Парикмахер</div>
+                </div>
+                <div class="team-card col-12 col-md-6 col-lg-4">
+                    <img src="{{ url_for('static', filename='css/images/mari.jpg') }}" class="rounded-circle" alt="" />
+                    <div class="team-card__name">
+                        Марина <a href="https://wa.me/79377233024/" title="Позвонить" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="team-card__category">Парикмахер, Барбер</div>
+                </div>
+                <div class="team-card col-12 col-md-6 col-lg-4">
+                    <img src="{{ url_for('static', filename='css/images/vika.jpg') }}" class="rounded-circle" alt="" />
+                    <div class="team-card__name">
+                        Виктория <a href="https://wa.me/79275083260/" title="Позвонить" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="team-card__category">Мастер маникюра</div>
+                </div>
+                <div class="team-card col-12 col-md-6 col-lg-4">
+                    <img src="{{ url_for('static', filename='css/images/eka.jpg') }}" class="rounded-circle" alt="" />
+                    <div class="team-card__name">
+                        Екатерина <a href="https://wa.me/79370969944/" title="Позвонить" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="team-card__category">Визажист</div>
+                </div>
+                <div class="team-card col-12 col-md-6 col-lg-4">
+                    <img src="{{ url_for('static', filename='css/images/maha.jpg') }}" class="rounded-circle" alt="" />
+                    <div class="team-card__name">
+                        Мария <a href="https://wa.me/79997448789/" title="Позвонить" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="team-card__category">Мастер шугаринга</div>
+                </div>
+            </div>
         </div>
-        <div>
-          <div class="font-weight-bold">График работы:</div>
-          {{ site_schedule|safe }}
+    </section>
+
+    <section id="section-contacts" class="section-common">
+        <h2 class="section-header">Контакты</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0 text-center text-lg-left">
+                    <div class="contact-card">
+                        <div class="font-weight-bold">Телефон</div>
+                        <div>
+                            <a href="tel:{{ site_phone }}" title="Позвонить">{{ site_phone_formated }}</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="font-weight-bold">Email</div>
+                        <div>
+                            <a href="mailto:{{ site_email }}">{{ site_email }}</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="font-weight-bold">Мы в соцсетях</div>
+                        <div>
+                            <a href="https://www.instagram.com/beauty_room_kamyshin/" target="_blank">Instagram</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="font-weight-bold">Адрес</div>
+                        <address>{{ site_address }}</address>
+                    </div>
+                    <div class="contact-card">
+                        <div class="font-weight-bold">График работы</div>
+                        {{ site_schedule|safe }}
+                    </div>
+                </div>
+                <div class="col-0 col-lg-8 d-none d-lg-block">
+                    {{ site_map|safe }}
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-12 col-md-8 map">
-        {{ site_map|safe }}
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 {% endblock %}

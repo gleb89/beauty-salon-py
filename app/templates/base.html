@@ -1,143 +1,74 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>{{ site_title }}</title>
     <meta name="description" content="{{ site_description }}" />
     {% include 'includes/favicons.html' %} {% include 'includes/og_tags.html' %}
-    <title>{{ site_title }}</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=cyrillic"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
 
-    <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Carter+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/animate.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      ver="1.03"
-      href="{{ url_for('static', filename='css/styles.css') }}"
-    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}" />
+    <link rel="stylesheet" ver="1.03" href="{{ url_for('static', filename='css/styles.css') }}" />
     {% include 'includes/site_verification.html' %}
-  </head>
-
-  <body data-spy="scroll" data-target="#main-nav" data-offset="200">
+</head>
+<body data-spy="scroll" data-target="#main-nav" data-offset="200">
     <header id="header ">
-      {% include 'includes/main.html' %}
-      <div id="header__content">
-        <div class="container text-center">
-          {% if page_title %}
-          <h1 class="wow bounceInLeft " data-wow-delay="0.5s">
-            {{ page_title }}
-          </h1>
-          {% endif %}
+        {% include 'includes/main.html' %}
+        <div id="header__content">
+            <div class="container text-center">
+                {% if page_title %}
+                    <h1 class="wow bounceInLeft" data-wow-delay="0.5s">{{ page_title }}</h1>
+                {% endif %}
+                <br />
+                {% if site_short_description %}
+                    <div id="motto" class="wow bounceInUp" data-wow-delay="0.6s"> {{ site_short_description }}</div>
+                {% endif %}
 
-          <br />
-          {% if page_descr %}
-          <h3 class="wow bounceInUp " data-wow-delay="0.6s">
-            {{ page_descr }}
-          </h3>
-          {% endif %} {% with massages =
-          get_flashed_messages(with_categories=true) %} {% if massages %}
-          <div class="container mt-4">
-            {% for category, message in massages %}
-            <div
-              class="alert alert-{{ category }} alert-dismissible fade show"
-              role="alert"
-            >
-              {{ message }}
-              <button
-                type="button"
-                class="close"
-                data-dismiss="alert"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
+                {% with massages = get_flashed_messages(with_categories=true) %}
+                    {% if massages %}
+                        <div class="container mt-4">
+                            {% for category, message in massages %}
+                            <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                                {{ message }}
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                {% endwith %}
             </div>
-            {% endfor %}
-          </div>
-          {% endif %} {% endwith %}
         </div>
-      </div>
     </header>
 
     <div id="content">
-      {% block content %}{% endblock %}
+        {% block content %}{% endblock %}
     </div>
-    <a class="gotopbtn" href="#"><i class="fas fa-chevron-circle-up"></i></a>
 
-    <footer id="footer " class="py-3">
-      {% include 'ffot/foot.html' %}
+    <footer id="footer" class="py-3">
+        <a id="gotopbtn" href="#">
+            <i class="fas fa-chevron-circle-up"></i>
+        </a>
+        <div class="container text-center text-muted">
+            &copy; 2018&ndash;{{ current_year }} {{ site_title }}
+        </div>
+        {% include 'includes/modals.html' %}
     </footer>
-    <script type="text/javascript">
-      function displ(ddd) {
-        if (document.getElementById(ddd).style.display == "none") {
-          document.getElementById(ddd).style.display = "block";
-        } else {
-          document.getElementById(ddd).style.display = "none";
-        }
-      }
-    </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
-
-    <script>
-      new WOW().init();
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 
-    <script src="{{ url_for('static', filename='js/navbar-collapse.js') }}"></script>
     {% include 'includes/site_statistics.html' %}
-  </body>
+</body>
+
 </html>
