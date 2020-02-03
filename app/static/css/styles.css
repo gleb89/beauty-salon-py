@@ -1,283 +1,285 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=cyrillic');
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=cyrillic");
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  position: relative;
 }
 
 /*Header*/
 /* #header {} */
 
 #header__content {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url('images/bbb.jpg');
-    background-attachment: fixed;
-    min-height: 100vh;
-    color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/bbb.jpg");
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: white;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 960px) {
+  #header__content {
+    background-attachment: local;
+  }
 }
 
 #header__content h1 {
-    font-family: 'Lobster', cursive;
-    font-size: 7rem;
-    color: white;
-    text-shadow: 2px 2px 2px black;
+  font-family: "Lobster", cursive;
+  font-size: 7rem;
+  color: white;
+  text-shadow: 2px 2px 2px black;
 }
 
 @media (max-width: 500px) {
-    #header__content h1 {
-        font-size: 7vh;
-    }
+  #header__content h1 {
+    font-size: 7vh;
+  }
 }
 
 #header__content #motto {
-    color: #EEE;
-    font-size: 1.4rem;
-    font-weight: 300;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 1px black;
+  color: #eee;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px black;
 }
-
 
 /* Main navigation */
 /* #main-nav {} */
 
 #main-nav .navbar-brand {
-    font-family: 'Lobster', cursive;
-    font-size: 1.6rem;
+  font-family: "Lobster", cursive;
+  font-size: 1.6rem;
 }
 
 #main-nav .navbar-text {
-    font-style: italic;
+  font-style: italic;
 }
 
 #main-nav #contacts a {
-    color: black;
-    font-weight: 700;
+  color: black;
+  font-weight: 700;
 }
 
 #main-nav #callback button {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 #main-nav #contacts a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Sections */
 .section-common {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .section-common .section-header {
-    text-align: center;
+  text-align: center;
 }
 
 .section-common h2.section-header {
-    font-family: 'Lobster', cursive;
-    font-size: 4.3rem;
-    text-shadow: 1px 1px 1px black;
-    margin-bottom: 80px;
+  font-family: "Lobster", cursive;
+  font-size: 4.3rem;
+  text-shadow: 1px 1px 1px black;
+  margin-bottom: 80px;
 }
 
 @media (max-width: 500px) {
-    .section-common h2.section-header {
-        font-size: 5vh;
-    }
+  .section-common h2.section-header {
+    font-size: 5vh;
+  }
 }
 
 #section-about {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url('images/fff.jpg');
-    background-attachment: fixed;
-    color: #eee;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/fff.jpg");
+  background-attachment: fixed;
+  color: #eee;
 }
 
 #section-about h3 {
-    font-family: 'Lobster', cursive;
-    font-size: 2.5rem;
+  font-family: "Lobster", cursive;
+  font-size: 2.5rem;
 }
 
 #section-about .h2 {
-    font-family: 'Lobster', cursive;
-    font-size: 3.1rem;
+  font-family: "Lobster", cursive;
+  font-size: 3.1rem;
 }
 
-
 #section-services {
-    background-image: url('images/serv.jpg');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #eee;
+  background-image: url("images/serv.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #eee;
 }
 
 #section-services .service-card h3.card-title {
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 #section-services .service-card .card-body {
-    height: 150px;
-    color: #000;
-    background-color: transparent;
+  height: 150px;
+  color: #000;
+  background-color: transparent;
 }
-
 
 /*  gallery */
 #section-gallery {
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    background-image: url('images/mmmmm.jpg');
-    background-attachment: fixed;
-    color: #eee;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-image: url("images/mmmmm.jpg");
+  background-attachment: fixed;
+  color: #eee;
 }
 
 #section-gallery .gallery-img img {
-    transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 #section-gallery .gallery-img img:hover {
-    filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 #section-gallery .inst {
-    font-family: "Lobster", cursive;
-    font-size: 3rem;
-    margin-top: 30px;
+  font-family: "Lobster", cursive;
+  font-size: 3rem;
+  margin-top: 30px;
 }
 
 #section-gallery .inst i {
-    color: white;
-    font-size: 5rem;
+  color: white;
+  font-size: 5rem;
 }
 
 /*prices*/
 #section-prices {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(./images/mm.jpg);
-    background-attachment: fixed;
-    color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./images/mm.jpg);
+  background-attachment: fixed;
+  color: black;
 }
 
 #section-prices .accordion .card-header h3 {
-    cursor: pointer;
-    font-family: 'Lobster', cursive;
-    position: relative;
+  cursor: pointer;
+  font-family: "Lobster", cursive;
+  position: relative;
 }
 
 #section-prices .accordion .card-header h3::after {
-    background-image: url('../images/arrow-down.png');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 24px;
+  background-image: url("../images/arrow-down.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 24px;
 
-    content: "";
+  content: "";
 
-    display: block;
-    width: 32px;
-    height: 32px;
+  display: block;
+  width: 32px;
+  height: 32px;
 
-    position: absolute;
-    right: 0;
-    top: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 /* #section-prices .accordion .card-header h3[aria-expanded="false"]::after {} */
 
 #section-prices .accordion .card-header h3[aria-expanded="true"]::after {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 #section-team {
-    background-image: url('images/mi.jpg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url("images/mi.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #section-team .team-card {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 #section-team .team-card img {
-    height: auto;
-    max-width: 100%;
-    max-height: 256px;
-    margin-bottom: 15px;
+  height: auto;
+  max-width: 100%;
+  max-height: 256px;
+  margin-bottom: 15px;
 }
 
 #section-team .team-card i {
-    color: #18c418;
+  color: #18c418;
 }
 
 #section-team .team-card .team-card__name {
-    font-size: 2rem;
-    font-weight: 600;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 #section-team .team-card .team-card__category {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 #section-contacts {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 #section-contacts .contact-card {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 #section-contacts .contact-card address {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 a#gotopbtn {
-    background-color: #EEE;
-    color: #777;
-    font-size: 1.5rem;
+  background-color: #eee;
+  color: #777;
+  font-size: 1.5rem;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
 
-    position: fixed;
-    right: 15px;
-    bottom: 15px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
 
-    opacity: .3;
-    transition: all ease-in-out .3s;
+  opacity: 0.3;
+  transition: all ease-in-out 0.3s;
 }
 
 a#gotopbtn:hover {
-    opacity: .9;
-    text-decoration: none;
+  opacity: 0.9;
+  text-decoration: none;
 }
 
 @media (max-width: 500px) {
-    a#gotopbtn {
-        display: none;
-    }
+  a#gotopbtn {
+    display: none;
+  }
 }
