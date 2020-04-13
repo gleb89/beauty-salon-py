@@ -125,7 +125,7 @@ body {
 @media (max-width: 500px) {
   #header__content {
     background-attachment: local;
-    background-image: url("images/component1.png");
+    
   }
 }
 @media (max-width: 960px) {
