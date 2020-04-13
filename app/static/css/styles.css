@@ -280,6 +280,14 @@ text-shadow: 1px 1px 1px black;
     background-image: url("images/component2.png");
   }
 }
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  box-shadow: 3px 3px 3px #dee2e6;
+}
 #section-gallery .gallery-img img {
   transition: all ease-in-out 0.3s;
 }
