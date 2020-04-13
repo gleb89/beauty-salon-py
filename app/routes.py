@@ -36,21 +36,24 @@ def process_callback_form(form_callback):
     flash('Успешно отправлено!', 'success')
 
 
+
 @app.route('/', methods=['GET', 'POST'])
 def homepage():
-    page_title = 'Beauty Room'
-    page_descr = 'Студия красоты'
+    page_title = 'Веб-студия'
+    page_descr = ''
 
     form_callback = CallbackForm()
     if form_callback.validate_on_submit():
         process_callback_form(form_callback)
         return redirect(url_for('homepage'))
 
+
     gallery = None
     try:
         gallery = reade_content_json('app/content/gallery.json')
     except Exception as e:
         print(e)
+    
 
     return render_template('pages/homepage.html',
                            page_title=page_title,

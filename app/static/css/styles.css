@@ -9,6 +9,7 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   position: relative;
+  
 }
 
 /*Header*/
@@ -25,6 +26,102 @@ body {
 
   display: flex;
   align-items: center;
+}
+.on{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/yslygi1.jpg");
+
+}
+.tw{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/yslygi2.jpg");
+
+}
+.th{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/yslygi3.jpg");
+  
+}
+.fo{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/yslygi4.jpg");
+  
+}
+.fi{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/yslygi5.jpg");
+  
+}
+.si{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/yslygi6.jpg");
+  
+}
+.se{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/yslygi7.jpg");
+  
+}
+.at{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/yslygi8.jpg");
+  
+}
+.ni{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/yslygi9.jpg");
+  
+}
+.el{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/yslygi10.jpg");
+  
+}
+.tv{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/yslygi11.jpg");
+  
+}
+#section-services .service-card .card-body {
+  height: 270px;
+  color: #f1f1f1;
+  border-radius: 7%;
+  box-shadow: 4px 4 px 4px solid black;
+  box-shadow: 3px 3px 5px;
+  width: 270px;
+  background-color: transparent;
+}
+.service-card {
+  text-align: -webkit-center;
+}
+
+
+
+
+
+
 }
 @media (max-width: 960px) {
   #header__content {
@@ -143,13 +240,9 @@ body {
   text-transform: uppercase;
   font-family: "Lobster", cursive;
 }
-
-#section-services .service-card .card-body {
-  height: 150px;
-  color: #000;
-  background-color: transparent;
+#section-services h3{
+text-shadow: 1px 1px 1px black;
 }
-
 /*  gallery */
 #section-gallery {
   background-repeat: no-repeat;

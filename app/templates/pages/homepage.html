@@ -33,39 +33,150 @@
             </div>
         </section>
 
-        {% if services %}
+        
             <section id="section-services" class="section-common">
                 <h2 class="section-header">Услуги</h2>
                 <div class="container">
-                    <div class="row">
-                        {% for service in services %}
-                            {% if service.show %}
-                                <div class="service-card col-12 col-md-6 col-lg-4 mb-5">
-                                    <div class="card shadow-sm text-center wow zoomIn" data-wow-delay="0.1s">
-                                        {% if service.image %}
-                                            <img class="img-thumbnail gap" src="{{ url_for('static', filename=service.image) }}" alt="{{ service.title }}">
-                                        {% else %}
-                                            <img src="https://via.placeholder.com/256x170" class="card-img-top" alt="">
-                                        {% endif %}
-                                        <div class="card-body featurette-heading text-center">
-                                            <h3 class="card-title">{{ service.title }}</h3>
-                                            <div class="card-text">{{ service.descr }}</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            {% endif %}
-                        {% endfor %}
+                    <div class="row justify-content-center">
+                        
+                        <div class="service-card  col-12 col-md-6 col-lg-4 mb-5">
+              
+  
+  
+                            <div class="card-body on featurette-heading text-center">
+                              <h3 class="card-title">Стрижки</h3>
+                              <div class="card-text"></div>
+                              
+                              
+                            </div>
+                          </div>
+                          <div class="service-card  col-12 col-md-6 col-lg-4 mb-5">
+              
+  
+  
+                            <div class="card-body tw featurette-heading text-center">
+                              <h3 class="card-title">Уход за бородой</h3>
+                              <div class="card-text"></div>
+                              
+                              
+                            </div>
+                          </div>
+                          <div class="service-card  col-12 col-md-6 col-lg-4 mb-5">
+              
+  
+  
+                            <div class="card-body th featurette-heading text-center">
+                              <h3 class="card-title">Ламинирование</h3>
+                              <div class="card-text"></div>
+                              
+                              
+                            </div>
+                          </div>
+                          <div class="service-card  col-12 col-md-6 col-lg-4 mb-5">
+              
+  
+  
+                            <div class="card-body fo featurette-heading text-center">
+                              <h3 class="card-title">Прически</h3>
+                              <div class="card-text"></div>
+                              
+                              
+                            </div>
+                          </div>
+                          <div class="service-card  col-12 col-md-6 col-lg-4 mb-5">
+              
+  
+  
+                            <div class="card-body fi featurette-heading text-center">
+                              <h3 class="card-title">Ботокс</h3>
+                              <div class="card-text"></div>
+                              
+                              
+                            </div>
+                          </div>
+                          <div class="service-card  col-12 col-md-6 col-lg-4 mb-5">
+              
+  
+  
+                            <div class="card-body si featurette-heading text-center">
+                              <h3 class="card-title">Маникюр</h3>
+                              <div class="card-text"></div>
+                              
+                              
+                            </div>
+                          </div>
+                          <div class="service-card  col-12 col-md-6 col-lg-4 mb-5">
+              
+  
+  
+                            <div class="card-body se featurette-heading text-center">
+                              <h3 class="card-title">Стилист</h3>
+                              <div class="card-text"></div>
+                             
+                              
+                            </div>
+                          </div>
+                          <div class="service-card  col-12 col-md-6 col-lg-4 mb-5">
+              
+  
+  
+                            <div class="card-body at featurette-heading text-center">
+                              <h3 class="card-title">Оформление бровей</h3>
+                              <div class="card-text"></div>
+                             
+                              
+                            </div>
+                          </div>
+                          <div class="service-card  col-12 col-md-6 col-lg-4 mb-5">
+              
+  
+  
+                            <div class="card-body ni featurette-heading text-center">
+                              <h3 class="card-title">Депиляция</h3>
+                              <div class="card-text"></div>
+                              
+                              
+                            </div>
+                          </div>
+                          <div class="service-card  col-12 col-md-6 col-lg-4 mb-5">
+              
+  
+  
+                            <div class="card-body el featurette-heading text-center">
+                              <h3 class="card-title">Kосметология</h3>
+                              <div class="card-text"></div>
+                              <button type="button" class="btn " data-toggle="modal" data-target="#exampleModalLong5">
+                                Подробнее
+                              </button>
+                              
+                            </div>
+                          </div>
+                         
+                          <div class="service-card  col-12 col-md-6 col-lg-4 mb-5">
+              
+  
+  
+                            <div class="card-body tv featurette-heading text-center">
+                              <h3 class="card-title">Уход за телом</h3>
+                              <div class="card-text"></div>
+                              <button type="button" class="btn " data-toggle="modal" data-target="#exampleModalLong5">
+                                Подробнее
+                              </button>
+                              
+                            </div>
+                          </div>
+                          
                     </div>
                 </div>
             </section>
-        {% endif %}
+        
     </main>
 
     {% if gallery %}
         <section id="section-gallery" class="section-common">
             <h2 class="section-header">Фотогалерея</h2>
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     {% for gal in gallery %}
                         {% if gal.show %}
                             {% set image_base_path = 'images/gallery/' %}
