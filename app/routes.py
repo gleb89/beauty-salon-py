@@ -39,7 +39,7 @@ def process_callback_form(form_callback):
 
 @app.route('/', methods=['GET', 'POST'])
 def homepage():
-    page_title = 'Веб-студия'
+    page_title = 'Студия красоты'
     page_descr = ''
 
     form_callback = CallbackForm()
