@@ -263,8 +263,10 @@ text-shadow: 1px 1px 1px black;
   }
 }
 @media (max-width: 500px) {
-  #header__content {
+  #section-gallery {
     background-attachment: local;
+    background-position: top center;
+    background-size: cover;
     background-repeat: repeat;
     background-image: url("images/component2.png");
   }
