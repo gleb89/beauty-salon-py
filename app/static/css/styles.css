@@ -268,7 +268,7 @@ text-shadow: 1px 1px 1px black;
     background-position: top center;
     background-size: cover;
     background-repeat: repeat;
-    background-image: url("images/component2.png");
+    background-image: url("images/component1.png");
   }
 }
 #section-gallery .gallery-img img {
