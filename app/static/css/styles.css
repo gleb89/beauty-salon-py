@@ -239,6 +239,15 @@ body {
     background-attachment: local;
   }
 }
+@media (max-width: 960px) {
+  #section-services {
+    background-attachment: local;
+    background-image: url("images/comp.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  }
+}
 #section-services .service-card h3.card-title {
   font-size: 1.6rem;
   font-weight: 700;
