@@ -19,7 +19,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("images/bbb.jpg");
+  background-image: url("https://images.unsplash.com/photo-1538022890810-8f4000ca9a10?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=80");
   background-attachment: fixed;
   min-height: 100vh;
   color: white;
@@ -119,7 +119,12 @@ body {
 
 
 
-
+.about-card {
+  color: black;
+}
+#section-about h2{
+  color: black;
+}
 
 
 @media (max-width: 500px) {
@@ -207,7 +212,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("images/fff.jpg");
+  /* background-image: url("images/fff.jpg"); */
   background-attachment: fixed;
   color: #eee;
 }
@@ -224,10 +229,13 @@ body {
 #section-about .h2 {
   font-family: "Lobster", cursive;
   font-size: 3.1rem;
+  color: black;
 }
-
+#section-services h2{
+  color: black;
+}
 #section-services {
-  background-image: url("images/serv.jpg");
+  background-image: url("https://images.unsplash.com/photo-1531646317777-0619c7c5d1d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -242,7 +250,7 @@ body {
 @media (max-width: 960px) {
   #section-services {
     background-attachment: local;
-    background-image: url("images/comp.png");
+    /* background-image: url("images/comp.png"); */
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -257,12 +265,12 @@ body {
 #section-services h3{
 text-shadow: 1px 1px 1px black;
 }
-/*  gallery */
+/*  section-services */
 #section-gallery {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  background-image: url("images/mmmmm.jpg");
+  /* background-image: url("images/mmmmm.jpg"); */
   background-attachment: fixed;
   color: #eee;
 }
@@ -277,8 +285,11 @@ text-shadow: 1px 1px 1px black;
     background-position: top center;
     background-size: cover;
     background-repeat:repeat;
-    background-image: url("images/component2.png");
+    /* background-image: url("images/component2.png"); */
   }
+}
+#section-gallery h2{
+  color: black;
 }
 .fixed-top {
   position: fixed;
@@ -303,10 +314,10 @@ text-shadow: 1px 1px 1px black;
 }
 
 #section-gallery .inst i {
-  color: white;
+  color: #866b6b;
   font-size: 5rem;
 }
-
+/* section-about */
 /*prices*/
 #section-prices {
   background-repeat: no-repeat;
@@ -345,7 +356,7 @@ text-shadow: 1px 1px 1px black;
 }
 
 /* #section-prices .accordion .card-header h3[aria-expanded="false"]::after {} */
-
+/* section-header */
 #section-prices .accordion .card-header h3[aria-expanded="true"]::after {
   transform: rotate(180deg);
 }
@@ -436,3 +447,5 @@ a#gotopbtn:hover {
     display: none;
   }
 }
+/* about-card  */
+
